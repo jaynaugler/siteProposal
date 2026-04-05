@@ -72,6 +72,7 @@
 
 #heroBtnsDiv {
     display: flex;
+    margin-left: -1rem;
 }
 
 #curricBtn {
@@ -97,4 +98,73 @@
     width: 35rem;
     border-radius: 10px;
     box-shadow: -12px 12px 0 rgba(0, 0, 0, 0.2);
+    margin: 2rem;
+}
+
+#heroImageDiv {
+    padding-left: 3rem;
+}
+
+#heroHeaderBlackText {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    margin-bottom: -2rem;
+}
+
+#heroHeaderProg {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    margin-bottom: -2rem;
+    color: #10477b;
+}
+
+#heroHeaderDiploma {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    color: #10477b;
+}
+
+#heroParagraph {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 300px;
+    font-weight: 400;
+    font-size: 1.15rem;
+}
+
+/* Welcome To section */
+#welcomeToDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+#welcomeHeaderText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#welcomeText {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 200;
+    margin-bottom: -1.5rem;
+}
+
+#nextGenHeaderText {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 200;
+}
+
+#welcomeBodyText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
 }
