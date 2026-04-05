@@ -9,31 +9,51 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+h2 {
+  margin-bottom: 0.75em;
+}
+h3 {
+  margin-bottom: 0.83em;
+}
+h4 {
+  margin-bottom: 1em;
+}
+h5 {
+  margin-bottom: 1em;
+}
+h6 {
+  margin-bottom: 1em;
+}
+
+section {
+  width: 100%;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
 /* Menu Bar */
 #menuBarDiv {
   display: flex;
-  height: 4rem;
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  align-self: center;
+  gap: 16px;
+  padding: 8px;
   background-color: #3e719f;
 }
 
 .menuBarInnerDivs {
   display: flex;
-  height: 4rem;
 }
 
 #nsccLogo {
-  display: flex;
-  justify-content: center;
-  align-self: center;
   width: 7rem;
   height: 3rem;
   object-fit: cover;
   object-position: center;
-  margin: 1rem;
   border-radius: 10px;
 }
 
@@ -41,12 +61,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 24px;
   list-style: none;
 }
 
 .menuOptionsText {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
   font-weight: 500;
   font-size: medium;
   color: white;
@@ -54,45 +73,46 @@ body {
 }
 
 .applyBtn {
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  align-items: center;
-  height: 2.5rem;
-  width: 8rem;
+  padding: 12px 16px;
   background-color: #10477b;
   color: white;
   font-weight: bold;
   font-size: 1rem;
   border-radius: 10px;
   box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
-  margin: 1rem;
   border: none;
 }
 
 /* Hero Section */
-#heroDiv {
-  display: flex;
-  justify-content: center;
+#heroDiv,
+.hero {
   margin-top: 2rem;
 }
 
-#heroParagraph {
-  width: 30rem;
-}
-
-#heroBtnsDiv {
+#heroDiv .container,
+.hero .container {
   display: flex;
-  margin-left: -1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
-#curricBtn {
+.hero-content {
+  flex: 1 1 300px;
+}
+
+#heroBtnsDiv,
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+#curricBtn,
+.btn-secondary {
   display: flex;
   justify-content: center;
   align-self: center;
   align-items: center;
-  height: 2.5rem;
-  width: 10rem;
   background-color: gainsboro;
   color: #10477b;
   font-weight: bold;
@@ -100,52 +120,46 @@ body {
   border-radius: 10px;
   box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
   border: none;
-  margin: 1rem;
+  padding: 12px 16px;
 }
 
-#heroImage {
+#heroImage,
+.hero-img {
   height: 20rem;
-  width: 35rem;
+  width: 100%;
   border-radius: 10px;
   box-shadow: -12px 12px 0 rgba(0, 0, 0, 0.2);
-  margin: 2rem;
 }
 
-#heroImageDiv {
-  padding-left: 3rem;
+#heroImageDiv,
+.hero-media {
+  flex: 1 1 300px;
 }
 
-#heroHeaderBlackText {
+#heroHeaderBlackText,
+.hero-title {
   font-size: 3rem;
-  margin-bottom: -2rem;
+  line-height: 1;
+  margin-bottom: 1rem;
 }
 
-#heroHeaderProg {
-  font-size: 3rem;
-  margin-bottom: -2rem;
+.hero-title-accent {
+  display: block;
   color: #10477b;
 }
 
-#heroHeaderDiploma {
-  font-size: 3rem;
-  color: #10477b;
-}
-
-#heroParagraph {
-  width: 300px;
+#heroParagraph,
+.hero-description {
   font-weight: 400;
   font-size: 1.15rem;
+  margin-bottom: 1rem;
 }
 
 /* Welcome To section */
 #welcomeToDiv {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background-color: white;
   padding-top: 6rem;
   padding-bottom: 6rem;
-  background-color: white;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
@@ -160,7 +174,6 @@ body {
 #welcomeText {
   font-size: 1rem;
   font-weight: 300;
-  margin-bottom: -1.5rem;
   color: #10477b;
 }
 
@@ -174,7 +187,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
   width: 50%;
+  margin: 0 auto;
   font-size: 1rem;
   color: rgb(79, 79, 79);
 }
@@ -186,11 +201,9 @@ body {
 }
 
 /* Program Specs/Cohort section */
-#progSpecsCohortDiv {
+#progSpecsCohortDiv .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 80%;
-  justify-self: center;
 }
 
 /* Program Delivery Card */
@@ -277,10 +290,14 @@ body {
 
 /* Device Compatibility section */
 #deviceCompatDiv {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#deviceCompatDiv .container {
   background-color: rgba(251, 153, 146, 0.431);
   border-left: 5px solid rgb(231, 19, 19);
   border-radius: 10px;
   padding: 1rem;
-  margin: 2rem;
   color: rgb(162, 13, 13);
 }
