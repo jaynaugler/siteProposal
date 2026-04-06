@@ -225,6 +225,7 @@ section {
   display: flex;
   align-items: center;
   gap: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 #computerIcon {
@@ -300,4 +301,38 @@ section {
   border-radius: 10px;
   padding: 1rem;
   color: rgb(162, 13, 13);
+}
+
+.deviceCompatHeadImageDiv {
+    display: inline-flex;
+    margin: 1rem;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+#deviceCompatHeader {
+    padding-left: 0.5rem;
+    padding-top: 0.25rem;
+    font-size: 1.25rem;
+}
+
+/* Roadmap to Success section */
+#roadmapDiv .container {
+    padding: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+#roadmapCardsOuterDiv {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.roadmapCardDivs {
+    background-color: white;
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 10px;
 }
