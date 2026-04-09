@@ -25,6 +25,11 @@ h6 {
   margin-bottom: 1em;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 section {
   width: 100%;
 }
@@ -47,6 +52,8 @@ section {
 
 .menuBarInnerDivs {
   display: flex;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 #nsccLogo {
@@ -66,10 +73,17 @@ section {
 }
 
 .menuOptionsText {
-  font-weight: 500;
-  font-size: medium;
+  font-weight: 600;
+  font-size: 1.15rem;
   color: white;
   text-decoration: none;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.menuOptionsText:hover {
+  color:rgb(187, 187, 187);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .applyBtn {
@@ -83,11 +97,13 @@ section {
   border: none;
 }
 
-/* Hero Section */
-#heroDiv,
-.hero {
+.applyBtn:hover {
+  background-color: white;
+  color:#10477b;
+  border: 1px solid #10477b;
 }
 
+/* Hero Section */
 #heroDiv .container,
 .hero .container {
   display: flex;
@@ -122,6 +138,11 @@ section {
   box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
   border: none;
   padding: 12px 16px;
+}
+
+#curricBtn:hover {
+  background-color: #3e719f;
+  color:gainsboro;
 }
 
 #heroImage,
@@ -242,6 +263,7 @@ section {
 }
 
 .progDivCardInnerDivs {
+  margin-bottom: 0.5rem;
 }
 
 .progDivCardInnerDivHeader {
@@ -299,21 +321,26 @@ section {
   background-color: rgba(251, 153, 146, 0.431);
   border-left: 5px solid rgb(231, 19, 19);
   border-radius: 10px;
-  padding: 1rem;
+  padding: 2rem;
   color: rgb(162, 13, 13);
 }
 
 .deviceCompatHeadImageDiv {
     display: inline-flex;
-    margin: 1rem;
+    margin-left: 1.5rem;
     justify-content: space-evenly;
     align-items: flex-start;
 }
 
 #deviceCompatHeader {
-    padding-left: 0.5rem;
+    padding-left: 0.75rem;
     padding-top: 0.25rem;
     font-size: 1.25rem;
+}
+
+#deviceCompatTextDiv {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 /* Roadmap to Success section */
@@ -321,6 +348,16 @@ section {
     padding: 1rem;
     padding-top: 3rem;
     padding-bottom: 3rem;
+}
+
+#roadmapHeaderText {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+#roadmapHeaderPara {
+  margin-bottom: 2rem;
+  color: rgb(79, 79, 79);
 }
 
 #roadmapCardsOuterDiv {
@@ -332,7 +369,109 @@ section {
 
 .roadmapCardDivs {
     background-color: white;
-    margin: 1rem;
+    margin: 0.5rem;
     padding: 2rem;
     border-radius: 10px;
+}
+
+.roadmapCardDivs:hover {
+    background-color: white;
+    margin: 0.5rem;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
+    border: none;
+}
+
+.roadmapCardDivs:clicked {
+  text-decoration: none;
+  color: inherit;
+}
+
+.roadMapIconDivs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+#recordsEnrolmentDiv {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: #10477b;
+  color: white;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+#recordsEnrolmentDiv:hover {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: #10477b;
+  color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
+  border: none;
+}
+
+#recordsEnrolmentDiv:clicked {
+  text-decoration: none;
+  color: inherit;
+}
+
+.scrollHeaderTextDiv {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  line-height: 0.5;
+}
+
+#recordEnrolmentHeaderText {
+  font-size: 1.25rem;
+}
+
+#scrollIcon {
+  height: 2.5rem;
+}
+
+#RecordEnrolmentArrow {
+  padding-top: 0.5rem;
+}
+
+/* Footer */
+.footerOuterDiv {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5rem;
+  background-color: white;
+}
+
+.footerHeaderTextDiv {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+#footerHeader {
+  font-size: 1.25rem;
+}
+
+.footerLinksDiv {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+.footerLinksText {
+  display: flex;
+  margin: 0.25rem;
+}
+
+.footerCopyrightText {
+  display: flex;
+  width: 20rem;
+  justify-content: right;
+  align-items: center;
 }
