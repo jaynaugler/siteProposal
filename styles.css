@@ -199,19 +199,16 @@ section {
 }
 
 .menuOptionsText {
-  font-weight: 500;
-  font-size: medium;
-  color: var(--menu-options-text);
   font-weight: 600;
   font-size: 1.15rem;
-  color: white;
+  color: var(--menu-options-text);
   text-decoration: none;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
 
 .menuOptionsText:hover {
-  color:rgb(187, 187, 187);
+  color: var(--accent-color); 
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
@@ -227,9 +224,9 @@ section {
 }
 
 .applyBtn:hover {
-  background-color: white;
-  color:#10477b;
-  border: 1px solid #10477b;
+  background-color: var(--bg-section);
+  color: var(--apply-btn-bg);
+  border: 1px solid var(--apply-btn-bg);
 }
 
 /* Hero Section */
@@ -270,8 +267,8 @@ section {
 }
 
 #curricBtn:hover {
-  background-color: #3e719f;
-  color:gainsboro;
+  background-color: var(--accent-color);
+  color: var(--bg-section);
 }
 
 #heroImage,
@@ -409,7 +406,7 @@ section {
 }
 
 .progCardIcons {
-  font-size: 25px;
+  font-size: 25px; 
   align-self: flex-start;
 }
 
@@ -514,7 +511,7 @@ section {
     border: none;
 }
 
-.roadmapCardDivs:clicked {
+.roadmapCardDivs:active { 
   text-decoration: none;
   color: inherit;
 }
@@ -547,7 +544,7 @@ section {
   border: none;
 }
 
-#recordsEnrolmentDiv:clicked {
+#recordsEnrolmentDiv:active {
   text-decoration: none;
   color: inherit;
 }
@@ -564,7 +561,7 @@ section {
 }
 
 #scrollIcon {
-  height: 2.5rem;
+  font-size: 2.5rem;
 }
 
 #RecordEnrolmentArrow {
