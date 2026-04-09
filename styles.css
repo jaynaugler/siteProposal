@@ -220,7 +220,8 @@ section {
   font-size: 1rem;
   border-radius: 10px;
   box-shadow: 2px 4px 4px var(--apply-btn-shadow);
-  border: none;
+  border: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
 }
 
 .applyBtn:hover {
@@ -405,7 +406,7 @@ section {
   font-size: 1.1rem;
 }
 
-.progCardIcons {
+i {
   font-size: 25px; 
   align-self: flex-start;
 }
@@ -449,8 +450,6 @@ section {
   border-radius: 10px;
   padding: 1rem;
   color: var(--alert-text);
-  padding: 2rem;
-  color: rgb(162, 13, 13);
 }
 
 .deviceCompatHeadImageDiv {
@@ -485,7 +484,7 @@ section {
 
 #roadmapHeaderPara {
   margin-bottom: 2rem;
-  color: rgb(79, 79, 79);
+  color: var(--text-muted);
 }
 
 #roadmapCardsOuterDiv {
@@ -496,19 +495,19 @@ section {
 }
 
 .roadmapCardDivs {
-    background-color: white;
-    margin: 0.5rem;
-    padding: 2rem;
-    border-radius: 10px;
+  background-color: var(--bg-section); 
+  margin: 0.5rem;
+  padding: 2rem;
+  border-radius: 10px;
 }
 
 .roadmapCardDivs:hover {
-    background-color: white;
-    margin: 0.5rem;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
-    border: none;
+  background-color: var(--bg-section); 
+  margin: 0.5rem;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 2px 4px 4px var(--apply-btn-shadow);
+  border: none;
 }
 
 .roadmapCardDivs:active { 
@@ -526,8 +525,8 @@ section {
   margin-top: 2rem;
   display: flex;
   justify-content: space-between;
-  background-color: #10477b;
-  color: white;
+background-color: var(--apply-btn-bg); 
+  color: var(--apply-btn-text);
   padding: 2rem;
   border-radius: 10px;
 }
@@ -536,11 +535,11 @@ section {
   margin-top: 2rem;
   display: flex;
   justify-content: space-between;
-  background-color: #10477b;
-  color: white;
+  background-color: var(--apply-btn-bg);
+  color: var(--apply-btn-text);
   padding: 2rem;
   border-radius: 10px;
-  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 4px 4px var(--apply-btn-shadow);
   border: none;
 }
 
@@ -573,7 +572,7 @@ section {
   display: flex;
   justify-content: space-between;
   padding: 2.5rem;
-  background-color: white;
+  background-color: var(--bg-section);
 }
 
 .footerHeaderTextDiv {
