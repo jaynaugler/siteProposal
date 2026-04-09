@@ -47,7 +47,7 @@ applyButtons.forEach(button => {
     // Confetti!!!
     confetti({
       particleCount: 100,      // How many particles
-      spread: 70,              // How wide the burst is
+      spread: 120,              // How wide the burst is
       angle: isTopNav ? 270 : 90, // If it's the top nav, shoot down, otherwise up
       origin: { x: xOrigin, y: yOrigin }, // Start at the button
       zIndex: 9999,            // Ensure it appears on top of everything

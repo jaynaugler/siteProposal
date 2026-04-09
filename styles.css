@@ -163,7 +163,7 @@ section {
   background-color: var(--secondary-btn-bg);
   color: var(--secondary-btn-text);
   font-size: 90%;
-  cursor: pointer;
+  cursor: url('Images/icons8-hand-cursor.svg'), pointer;
 }
 
 /* Menu Bar */
@@ -227,13 +227,10 @@ section {
 }
 
 .applyBtn:hover {
-  background-color: white;
-  color:#10477b;
-  border: 1px solid #10477b;
-  cursor: url('Images/icons8-hand-cursor.svg'), pointer;
   background-color: var(--bg-section);
   color: var(--apply-btn-bg);
   border: 1px solid var(--apply-btn-bg);
+  cursor: url('Images/icons8-hand-cursor.svg'), pointer;
 }
 
 /* Hero Section */
@@ -274,11 +271,9 @@ section {
 }
 
 #curricBtn:hover {
-  background-color: #3e719f;
-  color:gainsboro;
-  cursor: url('Images/icons8-hand-cursor.svg'), pointer;
   background-color: var(--accent-color);
   color: var(--bg-section);
+  cursor: url('Images/icons8-hand-cursor.svg'), pointer;
 }
 
 #heroImage,
@@ -511,19 +506,13 @@ i {
 }
 
 .roadmapCardDivs:hover {
-    background-color: white;
-    margin: 0.5rem;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
-    border: none;
-    cursor: url('Images/icons8-hand-cursor.svg'), pointer;
   background-color: var(--bg-section); 
   margin: 0.5rem;
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 2px 4px 4px var(--apply-btn-shadow);
   border: none;
+  cursor: url('Images/icons8-hand-cursor.svg'), pointer;
 }
 
 .roadmapCardDivs:active { 
