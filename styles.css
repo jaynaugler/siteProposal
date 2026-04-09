@@ -209,7 +209,7 @@ section {
 }
 
 .menuOptionsText:hover {
-  color: var(--accent-color); 
+  color: var(--accent-color);
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   cursor: url('Images/icons8-hand-cursor.svg'), pointer;
 }
@@ -411,7 +411,7 @@ section {
 }
 
 i {
-  font-size: 25px; 
+  font-size: 25px;
   align-self: flex-start;
 }
 
@@ -457,16 +457,16 @@ i {
 }
 
 .deviceCompatHeadImageDiv {
-    display: inline-flex;
-    margin-left: 1.5rem;
-    justify-content: space-evenly;
-    align-items: flex-start;
+  display: inline-flex;
+  margin-left: 1.5rem;
+  justify-content: space-evenly;
+  align-items: flex-start;
 }
 
 #deviceCompatHeader {
-    padding-left: 0.75rem;
-    padding-top: 0.25rem;
-    font-size: 1.25rem;
+  padding-left: 0.75rem;
+  padding-top: 0.25rem;
+  font-size: 1.25rem;
 }
 
 #deviceCompatTextDiv {
@@ -476,9 +476,9 @@ i {
 
 /* Roadmap to Success section */
 #roadmapDiv .container {
-    padding: 1rem;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+  padding: 1rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 #roadmapHeaderText {
@@ -492,21 +492,21 @@ i {
 }
 
 #roadmapCardsOuterDiv {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
 .roadmapCardDivs {
-  background-color: var(--bg-section); 
+  background-color: var(--bg-section);
   margin: 0.5rem;
   padding: 2rem;
   border-radius: 10px;
 }
 
 .roadmapCardDivs:hover {
-  background-color: var(--bg-section); 
+  background-color: var(--bg-section);
   margin: 0.5rem;
   padding: 2rem;
   border-radius: 10px;
@@ -515,7 +515,7 @@ i {
   cursor: url('Images/icons8-hand-cursor.svg'), pointer;
 }
 
-.roadmapCardDivs:active { 
+.roadmapCardDivs:active {
   text-decoration: none;
   color: inherit;
 }
@@ -530,7 +530,7 @@ i {
   margin-top: 2rem;
   display: flex;
   justify-content: space-between;
-background-color: var(--apply-btn-bg); 
+  background-color: var(--apply-btn-bg);
   color: var(--apply-btn-text);
   padding: 2rem;
   border-radius: 10px;
