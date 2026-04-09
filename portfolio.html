@@ -4,19 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/duotone/style.css"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="portfolio.css" />
+    <link rel="stylesheet" href="sidebar.css" />
   </head>
   <body>
+    <div id="reading-progress"></div>
     <header>
       <!-- Menu bar -->
       <nav id="menuBarDiv">
         <div class="menuBarInnerDivs">
-          <img
-            src="/Images/nsccLogo.png"
-            alt="Nova Scotia Community College logo"
-            id="nsccLogo"
-          />
+          <a href="index.html">
+            <img
+              src="/Images/nsccLogo.png"
+              alt="Nova Scotia Community College logo"
+              id="nsccLogo"
+            />
+          </a>
         </div>
         <div class="menuBarInnerDivs">
           <ul class="menuOptionsTextDiv">
@@ -28,454 +58,539 @@
         </div>
         <div class="menuBarInnerDivs">
           <button class="applyBtn">Apply Now</button>
+          <button id="themeToggle" class="applyBtn">🌓 Toggle Theme</button>
         </div>
-        <div id="reading-progress"></div>
       </nav>
-      <main>
-        <!-- Hero Banner -->
-        <section class="portfolio-hero">
-          <div class="container">
-            <!-- TODO hero image -->
-            <div class="image-container">
-              <img
-                src="./Images/hero-portfolio.jpg"
-                alt="student looking at the screen"
-              />
-            </div>
-          </div>
-        </section>
-        <!-- Portfolio Intro -->
-        <section class="portfolio-intro">
-          <div class="container">
-            <h1>Portfolio</h1>
-            <p>
-              As a professional in an ever-changing labour market with limitless
-              possibilities and opportunity around every corner, it is important
-              for you to be prepared to articulate and demonstrate your skills
-              and experience. You need to know yourself and what you bring to
-              positions.
-            </p>
-            <p>
-              The portfolio development process will help facilitate intentional
-              self-reflection and discovery. The goal of a Portfolio is to help
-              you capture, organize, and maintain a record of your learning,
-              experience, skills, and development. It is a career development
-              tool you can easily access, update and review throughout your
-              employment and academic journey. 
-            </p>
-          </div>
-        </section>
-        <!-- Checklists -->
-        <section class="checklists">
-          <div class="container">
-            <h2>Checklists</h2>
-            <p>
-              Present your portfolio in one of two ways: a LinkedIn
-              Profile or website. You may also choose to do both and link them
-              to one another. Whichever platform you choose, your Portfolio
-              should be professionally presented and represent your personal
-              ‘brand’.  In keeping with NSCC’s approach to portfolio learning,
-              students will follow the check list below and ensure their
-              portfolio is detailed and professional.
-            </p>
-
-            <!-- TODO add links downloads -->
-            <ul class="checklist-options">
-              <li class="checklist-item">
-                <a
-                  href="https://articulateusercontent.com/rise/courses/829kVNRWSwuZ3ijYmGkk8TcMTE2VeJc-/c8jpFMeTNjX6vXX8-Linkedin%2520Option%2520Checklist.pdf"
-                  class="checklist-link"
-                  target="_blank"
-                >
-                  <div class="checklist-info">
-                    <span class="checklist-file-icon">📄</span>
-                    <span class="checklist-title">LinkedIn Option</span>
-                  </div>
-                  <span class="checklist-download-icon">⬇</span>
-                </a>
-              </li>
-
-              <li class="checklist-item">
-                <a
-                  href="https://articulateusercontent.com/rise/courses/829kVNRWSwuZ3ijYmGkk8TcMTE2VeJc-/P9OmLMMAa10c9oZS-Website%2520Option%2520Checklist.pdf"
-                  class="checklist-link"
-                  target="_blank"
-                >
-                  <div class="checklist-info">
-                    <span class="checklist-file-icon">📄</span>
-                    <span class="checklist-title">Website Option</span>
-                  </div>
-                  <span class="checklist-download-icon">⬇</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <!-- Submission Samples -->
-        <section class="samples">
-          <div class="container">
-            <h2>Submission Samples</h2>
-            <ul class="samples-options">
-              <li class="sample-item">
-                <a
-                  href="https://nbraganzaportfolio.my.canva.site/example-portfolio"
-                  class="sample-link"
-                  target="_blank"
-                >
-                  <div class="sample-info">
-                    <span class="sample-link-icon">📄</span>
-                    <span class="sample-title">Website Option #1</span>
-                  </div>
-                  <span class="sample-redirect-icon">⬇</span>
-                </a>
-              </li>
-
-              <li class="sample-item">
-                <a
-                  href="https://breachuu.wixsite.com/example"
-                  class="sample-link"
-                  target="_blank"
-                >
-                  <div class="sample-info">
-                    <span class="sample-link-icon">📄</span>
-                    <span class="sample-title">Website Option #2</span>
-                  </div>
-                  <span class="sample-redirect-icon">⬇</span>
-                </a>
-              </li>
-
-              <li class="sample-item">
-                <a
-                  href="https://www.linkedin.com/in/justintcormier/"
-                  class="sample-link"
-                  target="_blank"
-                >
-                  <div class="sample-info">
-                    <span class="sample-link-icon">📄</span>
-                    <span class="sample-title">Justin Cormier (LinkedIn)</span>
-                  </div>
-                  <span class="sample-redirect-icon">⬇</span>
-                </a>
-              </li>
-
-              <li class="sample-item">
-                <a
-                  href="https://www.linkedin.com/in/jennifer-dugas-b18202a8/?originalSubdomain=ca"
-                  class="sample-link"
-                  target="_blank"
-                >
-                  <div class="sample-info">
-                    <span class="sample-link-icon">📄</span>
-                    <span class="sample-title">Jennifer Dugas (LinkedIn)</span>
-                  </div>
-                  <span class="sample-redirect-icon">⬇</span>
-                </a>
-              </li>
-
-              <li class="sample-item">
-                <a
-                  href="https://www.linkedin.com/in/bradee-jayne-m-7853901b2/"
-                  class="sample-link"
-                  target="_blank"
-                >
-                  <div class="sample-info">
-                    <span class="sample-link-icon">📄</span>
-                    <span class="sample-title">Bradee Mounce (LinkedIn)</span>
-                  </div>
-                  <span class="sample-redirect-icon">⬇</span>
-                </a>
-              </li>
-            </ul>
-            <!-- TODO links list -->
-          </div>
-        </section>
-        <!-- Timeline -->
-        <section class="timeline">
-          <div class="container">
-            <h2>Timeline</h2>
-            <!-- TODO open/close -->
-            <ul class="timeline-options">
-              <li class="timeline-item">
-                <details class="timeline-dropdown">
-                  <summary class="timeline-header">
-                    <span class="timeline-title">First Term</span>
-                    <span class="timeline-chevron">ICON</span>
-                  </summary>
-                  <ul class="timeline-steps">
-                    <li class="timeline-step">
-                      Review all of the Portfolio information contained on this
-                      site to ensure you understand the requirements
-                    </li>
-                    <li class="timeline-step">
-                      Create a 'Portfolio' File in your One Drive – this is
-                      where you will keep everything you want to include in your
-                      Portfolio
-                    </li>
-                    <li class="timeline-step timeline-step--highlighted">
-                      TIP!! Download assignments from Brightspace before the
-                      course closes – you will lose access to this information
-                    </li>
-                  </ul>
-                </details>
-              </li>
-
-              <li class="timeline-item">
-                <details class="timeline-dropdown">
-                  <summary class="timeline-header">
-                    <span class="timeline-title">Each Term</span>
-                    <span class="timeline-chevron">ICON</span>
-                  </summary>
-                  <ul class="timeline-steps">
-                    <li class="timeline-step">
-                      Choose one or two samples of your work/'evidence' of your
-                      skills for each course
-                    </li>
-                    <li class="timeline-step">
-                      Choose which platform you will use for your Portfolio
-                    </li>
-                    <li class="timeline-step">
-                      Begin process of building and organizing your portfolio.
-                    </li>
-                    <li class="timeline-step timeline-step--highlighted">
-                      TIP!! Faculty may have indicated which assignments are
-                      'Portfolio Friendly' - if not, ask!
-                    </li>
-                  </ul>
-                </details>
-              </li>
-
-              <li class="timeline-item">
-                <details class="timeline-dropdown">
-                  <summary class="timeline-header">
-                    <span class="timeline-title">Final Term</span>
-                    <span class="timeline-chevron">ICON</span>
-                  </summary>
-                  <ul class="timeline-steps">
-                    <li class="timeline-step">Add final touches</li>
-                    <li class="timeline-step">Proofread</li>
-                    <li class="timeline-step">
-                      Organize - add table of contents
-                    </li>
-                    <li class="timeline-step">
-                      Compile your Learning Narrative
-                    </li>
-                    <li class="timeline-step timeline-step--highlighted">
-                      TIP!! Review the Library Subject Guide on Learning
-                      Narratives for guidance
-                    </li>
-                  </ul>
-                </details>
-              </li>
-
-              <li class="timeline-item">
-                <details class="timeline-dropdown">
-                  <summary class="timeline-header">
-                    <span class="timeline-title"
-                      >Portfolio Review Appointment</span
-                    >
-                    <span class="timeline-chevron">ICON</span>
-                  </summary>
-                  <ul class="timeline-steps">
-                    <li class="timeline-step">
-                      Your Faculty for Work Experience will be assessing your
-                      portfolio
-                    </li>
-                    <li class="timeline-step">
-                      Prior to requesting a portfolio appointment, review the
-                      information and instructions you have been provided
-                    </li>
-                    <li class="timeline-step">
-                      Include your name, student (w) #, and 'Portfolio Review'
-                      in the subject line of the email requesting a Portfolio
-                      review appointment
-                    </li>
-                    <li class="timeline-step timeline-step--highlighted">
-                      Review with a friend or another student before your
-                      appointment! TIP!! Use the 'checklist' to confirm you have
-                      everything included before your Portfolio review
-                    </li>
-                  </ul>
-                </details>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <!-- Video -->
-        <section class="featured-article">
-          <div class="container">
-            <div class="featured-card">
-              <div class="video-container">
-                <iframe
-                  id="screencast-video"
-                  src="https://go.screenpal.com/player/cTehFNn1UKp?ff=true&controls=1&sec=0&watchPage=true"
-                  width="100%"
-                  height="480"
-                  scrolling="no"
-                  allow="autoplay; fullscreen"
-                  title="eMeetup - LinkedIn an Option for Portfolio"
-                  style="border: 0"
-                ></iframe>
-              </div>
-              <div class="featured-card-content">
-                <div class="featured-card-tag">Featured eMeetup</div>
-                <h3>LinkedIn: an Option for Portfolio</h3>
-                <p>
-                  Discover how to leverage professional networking platforms to
-                  showcase your diploma milestones effectively.
-                </p>
-                <div class="featured-card-actions">
-                  <a href="#" class="btn-primary">Watch Video</a>
-                  <a href="#" class="btn-outline">Read More</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- Roadmap -->
-        <section class="roadmap">
-          <div class="container">
-            <div class="roadmap-container">
-              <div class="roadmap-header">
-                <h2>Portfolio Development Roadmap</h2>
-                <p>Your roadmap to a successful programming portfolio</p>
-              </div>
-
-              <div class="roadmap-steps">
-                <!-- First Term -->
-                <div class="roadmap-step">
-                  <div class="step-badge step-badge--first">T</div>
-                  <h3 class="step-title step-title--first">First Term</h3>
-                  <p class="step-description">
-                    Download assignments from Brightspace before the course
-                    closes.
-                  </p>
-                  <ul class="step-list">
-                    <li>
-                      Review all of the Portfolio information contained on this
-                      site to ensure you understand the requirements
-                    </li>
-                    <li>
-                      Create a Portfolio File in your One Drive - this is where
-                      you will keep everything you want to include in your
-                      Portfolio
-                    </li>
-                  </ul>
-                </div>
-
-                <!-- Each Term -->
-                <div class="roadmap-step">
-                  <div class="step-badge step-badge--each">I</div>
-                  <h3 class="step-title step-title--each">Each Term</h3>
-                  <p class="step-description">
-                    Faculty may have indicated which assignments are 'Portfolio
-                    Friendly'.
-                  </p>
-                  <ul class="step-list">
-                    <li>
-                      Choose one or two samples of your work/evidence of your
-                      skills for each course
-                    </li>
-                    <li>
-                      Choose which platform you will use for your Portfolio
-                    </li>
-                    <li>
-                      Begin process of building and organizing your portfolio.
-                    </li>
-                  </ul>
-                </div>
-
-                <!-- Final Term -->
-                <div class="roadmap-step">
-                  <div class="step-badge step-badge--final">P</div>
-                  <h3 class="step-title step-title--final">Final Term</h3>
-                  <p class="step-description">
-                    Review the Library Subject Guide on Learning Narratives for
-                    guidance.
-                  </p>
-                  <ul class="step-list">
-                    <li>Add final touches</li>
-                    <li>Proofread</li>
-                    <li>Organize - add table of contents</li>
-                    <li>Compile your Learning Narrative</li>
-                  </ul>
-                </div>
-
-                <!-- Portfolio Review -->
-                <div class="roadmap-step">
-                  <div class="step-badge step-badge--review">S</div>
-                  <h3 class="step-title step-title--review">
-                    Portfolio Review
-                  </h3>
-                  <p class="step-description">
-                    Use the 'checklist' to confirm you have everything included
-                    before your review.
-                  </p>
-                  <ul class="step-list">
-                    <li>
-                      Your Faculty for Work Experience will be assessing your
-                      portfolio
-                    </li>
-                    <li>
-                      Prior to requesting a portfolio appointment, review the
-                      information and instructions you have been provided
-                    </li>
-                    <li>
-                      Include your name, student (w) #, and 'Portfolio Review'
-                      in the subject line of the email requesting a Portfolio
-                      review appointment
-                    </li>
-                    <li>
-                      Review with a friend or another student before your
-                      appointment!
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- Tips -->
-        <section class="tips">
-          <div class="container">
-            <div class="tips-grid">
-              <div class="tip-card">
-                <div class="tip-body">
-                  <div class="tip-header">
-                    <span class="tip-icon">ⓘ</span>
-                    <h3 class="tip-title">Tip</h3>
-                  </div>
-                  <p class="tip-text">
-                    Apply consistent style and format to all your personal brand
-                    through your job search tools (resume, cover letter, list of
-                    references, and portfolio) for a consistent and memorable
-                    personal brand.
-                  </p>
-                </div>
-                <p class="tip-source">
-                  Faculty, Business Administration Program
-                </p>
-              </div>
-
-              <div class="tip-card">
-                <div class="tip-body">
-                  <div class="tip-header">
-                    <span class="tip-icon">ⓘ</span>
-                    <h3 class="tip-title">Tip</h3>
-                  </div>
-                  <p class="tip-text">
-                    Continue to update your portfolio as you develop new skills
-                    and gain more work experience.
-                  </p>
-                </div>
-                <p class="tip-source">
-                  Faculty, Business Administration Program
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
     </header>
+
+    <main>
+      <!-- Sidebar -->
+      <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+          <h2 class="sidebar-program-title">eCampus IT Programming Diploma</h2>
+          <button class="sidebar-toggle" id="sidebar-toggle">
+            <i class="ph ph-x"></i>
+          </button>
+        </div>
+
+        <nav class="sidebar-nav">
+          <a href="#" class="sidebar-link">
+            <i class="ph ph-compass"></i>
+            <span>Get Started</span>
+            <span class="sidebar-status"></span>
+          </a>
+          <a href="#" class="sidebar-link">
+            <i class="ph ph-info"></i>
+            <span>Program Information</span>
+            <span class="sidebar-status"></span>
+          </a>
+          <a href="#" class="sidebar-link">
+            <i class="ph ph-briefcase"></i>
+            <span>Work Experience</span>
+            <span class="sidebar-status"></span>
+          </a>
+          <a href="portfolio.html" class="sidebar-link sidebar-link--active">
+            <i class="ph ph-folder-open"></i>
+            <span>Portfolio</span>
+            <span class="sidebar-status sidebar-status--done">
+              <i class="ph-fill ph-check-circle"></i>
+            </span>
+          </a>
+          <a href="#" class="sidebar-link">
+            <i class="ph ph-path"></i>
+            <span>Alternate Pathway</span>
+            <span class="sidebar-status"></span>
+          </a>
+          <a href="#" class="sidebar-link">
+            <i class="ph ph-certificate"></i>
+            <span>Recognition of Prior Learning</span>
+            <span class="sidebar-status"></span>
+          </a>
+          <a href="#" class="sidebar-link">
+            <i class="ph ph-clipboard-text"></i>
+            <span>Records & Enrolment</span>
+            <span class="sidebar-status"></span>
+          </a>
+        </nav>
+      </aside>
+
+      <button class="sidebar-open" id="sidebar-open">
+        <i class="ph ph-list"></i>
+      </button>
+
+      <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+      <!-- Hero Banner -->
+      <section class="portfolio-hero">
+        <div class="container">
+          <div class="image-container">
+            <img
+              src="./Images/hero-portfolio.jpg"
+              alt="student looking at the screen"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio Intro -->
+      <section class="portfolio-intro">
+        <div class="container">
+          <h1>Portfolio</h1>
+          <p>
+            As a professional in an ever-changing labour market with limitless
+            possibilities and opportunity around every corner, it is important
+            for you to be prepared to articulate and demonstrate your skills and
+            experience. You need to know yourself and what you bring to
+            positions.
+          </p>
+          <p>
+            The portfolio development process will help facilitate intentional
+            self-reflection and discovery. The goal of a Portfolio is to help
+            you capture, organize, and maintain a record of your learning,
+            experience, skills, and development. It is a career development tool
+            you can easily access, update and review throughout your employment
+            and academic journey. 
+          </p>
+        </div>
+      </section>
+
+      <!-- Checklists -->
+      <section class="checklists">
+        <div class="container">
+          <h2>Checklists</h2>
+          <p>
+            Present your portfolio in one of two ways: a LinkedIn
+            Profile or website. You may also choose to do both and link them to
+            one another. Whichever platform you choose, your Portfolio should be
+            professionally presented and represent your personal ‘brand’.  In
+            keeping with NSCC’s approach to portfolio learning, students will
+            follow the check list below and ensure their portfolio is detailed
+            and professional.
+          </p>
+
+          <!-- TODO add links downloads -->
+          <ul class="checklist-options">
+            <li class="checklist-item">
+              <a
+                href="https://articulateusercontent.com/rise/courses/829kVNRWSwuZ3ijYmGkk8TcMTE2VeJc-/c8jpFMeTNjX6vXX8-Linkedin%2520Option%2520Checklist.pdf"
+                class="checklist-link"
+                target="_blank"
+              >
+                <div class="checklist-info">
+                  <span class="checklist-file-icon"
+                    ><i class="ph-duotone ph-file-pdf"></i
+                  ></span>
+                  <span class="checklist-title">LinkedIn Option</span>
+                </div>
+                <span class="checklist-download-icon"
+                  ><i class="ph ph-download-simple"></i
+                ></span>
+              </a>
+            </li>
+
+            <li class="checklist-item">
+              <a
+                href="https://articulateusercontent.com/rise/courses/829kVNRWSwuZ3ijYmGkk8TcMTE2VeJc-/P9OmLMMAa10c9oZS-Website%2520Option%2520Checklist.pdf"
+                class="checklist-link"
+                target="_blank"
+              >
+                <div class="checklist-info">
+                  <span class="checklist-file-icon"
+                    ><i class="ph-duotone ph-file-pdf"></i
+                  ></span>
+                  <span class="checklist-title">Website Option</span>
+                </div>
+                <span class="checklist-download-icon"
+                  ><i class="ph ph-download-simple"></i
+                ></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Submission Samples -->
+      <section class="samples">
+        <div class="container">
+          <h2>Submission Samples</h2>
+          <ul class="samples-options">
+            <li class="sample-item">
+              <a
+                href="https://nbraganzaportfolio.my.canva.site/example-portfolio"
+                class="sample-link"
+                target="_blank"
+              >
+                <div class="sample-info">
+                  <span class="sample-link-icon"
+                    ><i class="ph ph-link-simple-horizontal"></i
+                  ></span>
+                  <span class="sample-title">Website Option #1</span>
+                </div>
+                <span class="sample-redirect-icon"
+                  ><i class="ph ph-arrow-square-out"></i
+                ></span>
+              </a>
+            </li>
+
+            <li class="sample-item">
+              <a
+                href="https://breachuu.wixsite.com/example"
+                class="sample-link"
+                target="_blank"
+              >
+                <div class="sample-info">
+                  <span class="sample-link-icon"
+                    ><i class="ph ph-link-simple-horizontal"></i
+                  ></span>
+                  <span class="sample-title">Website Option #2</span>
+                </div>
+                <span class="sample-redirect-icon"
+                  ><i class="ph ph-arrow-square-out"></i
+                ></span>
+              </a>
+            </li>
+
+            <li class="sample-item">
+              <a
+                href="https://www.linkedin.com/in/justintcormier/"
+                class="sample-link"
+                target="_blank"
+              >
+                <div class="sample-info">
+                  <span class="sample-link-icon"
+                    ><i class="ph ph-link-simple-horizontal"></i
+                  ></span>
+                  <span class="sample-title">Justin Cormier (LinkedIn)</span>
+                </div>
+                <span class="sample-redirect-icon"
+                  ><i class="ph ph-arrow-square-out"></i
+                ></span>
+              </a>
+            </li>
+
+            <li class="sample-item">
+              <a
+                href="https://www.linkedin.com/in/jennifer-dugas-b18202a8/?originalSubdomain=ca"
+                class="sample-link"
+                target="_blank"
+              >
+                <div class="sample-info">
+                  <span class="sample-link-icon"
+                    ><i class="ph ph-link-simple-horizontal"></i
+                  ></span>
+                  <span class="sample-title">Jennifer Dugas (LinkedIn)</span>
+                </div>
+                <span class="sample-redirect-icon"
+                  ><i class="ph ph-arrow-square-out"></i
+                ></span>
+              </a>
+            </li>
+
+            <li class="sample-item">
+              <a
+                href="https://www.linkedin.com/in/bradee-jayne-m-7853901b2/"
+                class="sample-link"
+                target="_blank"
+              >
+                <div class="sample-info">
+                  <span class="sample-link-icon"
+                    ><i class="ph ph-link-simple-horizontal"></i
+                  ></span>
+                  <span class="sample-title">Bradee Mounce (LinkedIn)</span>
+                </div>
+                <span class="sample-redirect-icon"
+                  ><i class="ph ph-arrow-square-out"></i
+                ></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Timeline -->
+      <section class="timeline">
+        <div class="container">
+          <h2>Timeline</h2>
+          <ul class="timeline-options">
+            <li class="timeline-item">
+              <details class="timeline-dropdown">
+                <summary class="timeline-header">
+                  <span class="timeline-title">First Term</span>
+                  <span class="timeline-chevron"
+                    ><i class="ph ph-caret-down"></i
+                  ></span>
+                </summary>
+                <ul class="timeline-steps">
+                  <li class="timeline-step">
+                    Review all of the Portfolio information contained on this
+                    site to ensure you understand the requirements
+                  </li>
+                  <li class="timeline-step">
+                    Create a 'Portfolio' File in your One Drive – this is where
+                    you will keep everything you want to include in your
+                    Portfolio
+                  </li>
+                  <li class="timeline-step timeline-step--highlighted">
+                    TIP!! Download assignments from Brightspace before the
+                    course closes – you will lose access to this information
+                  </li>
+                </ul>
+              </details>
+            </li>
+
+            <li class="timeline-item">
+              <details class="timeline-dropdown">
+                <summary class="timeline-header">
+                  <span class="timeline-title">Each Term</span>
+                  <span class="timeline-chevron"
+                    ><i class="ph ph-caret-down"></i
+                  ></span>
+                </summary>
+                <ul class="timeline-steps">
+                  <li class="timeline-step">
+                    Choose one or two samples of your work/'evidence' of your
+                    skills for each course
+                  </li>
+                  <li class="timeline-step">
+                    Choose which platform you will use for your Portfolio
+                  </li>
+                  <li class="timeline-step">
+                    Begin process of building and organizing your portfolio.
+                  </li>
+                  <li class="timeline-step timeline-step--highlighted">
+                    TIP!! Faculty may have indicated which assignments are
+                    'Portfolio Friendly' - if not, ask!
+                  </li>
+                </ul>
+              </details>
+            </li>
+
+            <li class="timeline-item">
+              <details class="timeline-dropdown">
+                <summary class="timeline-header">
+                  <span class="timeline-title">Final Term</span>
+                  <span class="timeline-chevron"
+                    ><i class="ph ph-caret-down"></i
+                  ></span>
+                </summary>
+                <ul class="timeline-steps">
+                  <li class="timeline-step">Add final touches</li>
+                  <li class="timeline-step">Proofread</li>
+                  <li class="timeline-step">
+                    Organize - add table of contents
+                  </li>
+                  <li class="timeline-step">Compile your Learning Narrative</li>
+                  <li class="timeline-step timeline-step--highlighted">
+                    TIP!! Review the Library Subject Guide on Learning
+                    Narratives for guidance
+                  </li>
+                </ul>
+              </details>
+            </li>
+
+            <li class="timeline-item">
+              <details class="timeline-dropdown">
+                <summary class="timeline-header">
+                  <span class="timeline-title"
+                    >Portfolio Review Appointment</span
+                  >
+                  <span class="timeline-chevron"
+                    ><i class="ph ph-caret-down"></i
+                  ></span>
+                </summary>
+                <ul class="timeline-steps">
+                  <li class="timeline-step">
+                    Your Faculty for Work Experience will be assessing your
+                    portfolio
+                  </li>
+                  <li class="timeline-step">
+                    Prior to requesting a portfolio appointment, review the
+                    information and instructions you have been provided
+                  </li>
+                  <li class="timeline-step">
+                    Include your name, student (w) #, and 'Portfolio Review' in
+                    the subject line of the email requesting a Portfolio review
+                    appointment
+                  </li>
+                  <li class="timeline-step timeline-step--highlighted">
+                    Review with a friend or another student before your
+                    appointment! TIP!! Use the 'checklist' to confirm you have
+                    everything included before your Portfolio review
+                  </li>
+                </ul>
+              </details>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Video -->
+      <section class="featured-article">
+        <div class="container">
+          <div class="featured-card">
+            <div class="video-container">
+              <iframe
+                id="screencast-video"
+                src="https://go.screenpal.com/player/cTehFNn1UKp?ff=true&controls=1&sec=0&watchPage=true"
+                width="100%"
+                height="480"
+                scrolling="no"
+                allow="autoplay; fullscreen"
+                title="eMeetup - LinkedIn an Option for Portfolio"
+                style="border: 0"
+              ></iframe>
+            </div>
+            <div class="featured-card-content">
+              <div class="featured-card-tag">Featured eMeetup</div>
+              <h3>LinkedIn: an Option for Portfolio</h3>
+              <p>
+                Discover how to leverage professional networking platforms to
+                showcase your diploma milestones effectively.
+              </p>
+              <div class="featured-card-actions">
+                <a href="#" class="btn-primary">Watch Video</a>
+                <a href="#" class="btn-outline">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Roadmap -->
+      <section class="roadmap">
+        <div class="container">
+          <div class="roadmap-container">
+            <div class="roadmap-header">
+              <h2>Portfolio Development Roadmap</h2>
+              <p>Your roadmap to a successful programming portfolio</p>
+            </div>
+
+            <div class="roadmap-steps">
+              <!-- First Term -->
+              <div class="roadmap-step">
+                <div class="step-badge step-badge--first">T</div>
+                <h3 class="step-title step-title--first">First Term</h3>
+                <p class="step-description">
+                  Download assignments from Brightspace before the course
+                  closes.
+                </p>
+                <ul class="step-list">
+                  <li>
+                    Review all of the Portfolio information contained on this
+                    site to ensure you understand the requirements
+                  </li>
+                  <li>
+                    Create a Portfolio File in your One Drive - this is where
+                    you will keep everything you want to include in your
+                    Portfolio
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Each Term -->
+              <div class="roadmap-step">
+                <div class="step-badge step-badge--each">I</div>
+                <h3 class="step-title step-title--each">Each Term</h3>
+                <p class="step-description">
+                  Faculty may have indicated which assignments are 'Portfolio
+                  Friendly'.
+                </p>
+                <ul class="step-list">
+                  <li>
+                    Choose one or two samples of your work/evidence of your
+                    skills for each course
+                  </li>
+                  <li>Choose which platform you will use for your Portfolio</li>
+                  <li>
+                    Begin process of building and organizing your portfolio.
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Final Term -->
+              <div class="roadmap-step">
+                <div class="step-badge step-badge--final">P</div>
+                <h3 class="step-title step-title--final">Final Term</h3>
+                <p class="step-description">
+                  Review the Library Subject Guide on Learning Narratives for
+                  guidance.
+                </p>
+                <ul class="step-list">
+                  <li>Add final touches</li>
+                  <li>Proofread</li>
+                  <li>Organize - add table of contents</li>
+                  <li>Compile your Learning Narrative</li>
+                </ul>
+              </div>
+
+              <!-- Portfolio Review -->
+              <div class="roadmap-step">
+                <div class="step-badge step-badge--review">S</div>
+                <h3 class="step-title step-title--review">Portfolio Review</h3>
+                <p class="step-description">
+                  Use the 'checklist' to confirm you have everything included
+                  before your review.
+                </p>
+                <ul class="step-list">
+                  <li>
+                    Your Faculty for Work Experience will be assessing your
+                    portfolio
+                  </li>
+                  <li>
+                    Prior to requesting a portfolio appointment, review the
+                    information and instructions you have been provided
+                  </li>
+                  <li>
+                    Include your name, student (w) #, and 'Portfolio Review' in
+                    the subject line of the email requesting a Portfolio review
+                    appointment
+                  </li>
+                  <li>
+                    Review with a friend or another student before your
+                    appointment!
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Tips -->
+      <section class="tips">
+        <div class="container">
+          <div class="tips-grid">
+            <div class="tip-card">
+              <div class="tip-body">
+                <div class="tip-header">
+                  <span class="tip-icon"><i class="ph ph-info"></i></span>
+                  <h3 class="tip-title">Tip</h3>
+                </div>
+                <p class="tip-text">
+                  Apply consistent style and format to all your personal brand
+                  through your job search tools (resume, cover letter, list of
+                  references, and portfolio) for a consistent and memorable
+                  personal brand.
+                </p>
+              </div>
+              <p class="tip-source">Faculty, Business Administration Program</p>
+            </div>
+
+            <div class="tip-card">
+              <div class="tip-body">
+                <div class="tip-header">
+                  <span class="tip-icon"><i class="ph ph-info"></i></span>
+                  <h3 class="tip-title">Tip</h3>
+                </div>
+                <p class="tip-text">
+                  Continue to update your portfolio as you develop new skills
+                  and gain more work experience.
+                </p>
+              </div>
+              <p class="tip-source">Faculty, Business Administration Program</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
     <script>
       const bar = document.getElementById("reading-progress");
       window.addEventListener("scroll", () => {
@@ -491,6 +606,28 @@
           total > 0 ? Math.min((scrolled / total) * 100, 100) : 0;
         bar.style.width = progress + "%";
       });
+
+      // Side bar navigation
+      const sidebar = document.getElementById("sidebar");
+      const sidebarOpen = document.getElementById("sidebar-open");
+      const sidebarClose = document.getElementById("sidebar-toggle");
+      const sidebarOverlay = document.getElementById("sidebar-overlay");
+
+      function openSidebar() {
+        sidebar.classList.add("sidebar--open");
+        sidebarOverlay.classList.add("sidebar-overlay--visible");
+      }
+
+      function closeSidebar() {
+        sidebar.classList.remove("sidebar--open");
+        sidebarOverlay.classList.remove("sidebar-overlay--visible");
+      }
+
+      sidebarOpen.addEventListener("click", openSidebar);
+      sidebarClose.addEventListener("click", closeSidebar);
+      sidebarOverlay.addEventListener("click", closeSidebar);
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

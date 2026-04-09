@@ -31,18 +31,11 @@ a {
   }
 }
 
-/* === Fixed Nav + Reading Progress === */
-#menuBarDiv {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-}
+/* ===  Reading Progress === */
 
 #reading-progress {
-  position: absolute;
-  bottom: -5px;
+  position: fixed;
+  top: 0px;
   left: 0;
   height: 6px;
   width: 0%;
@@ -50,13 +43,8 @@ a {
   transition: width 0.1s linear;
 }
 
-main {
-  padding-top: 80px;
-}
-
 /* Hero Banner */
 .portfolio-hero .image-container {
-  padding-top: 2.5rem;
   height: 60vh;
   max-height: 600px;
 }
@@ -110,6 +98,8 @@ main {
 
 .checklist-info {
   flex: 1;
+  display: flex;
+  align-items: center;
 }
 
 .checklist-title {
@@ -117,7 +107,7 @@ main {
 }
 
 .checklist-file-icon {
-  margin-right: 0.25rem;
+  margin-right: 0.5rem;
 }
 
 /* === Submission Samples === */
@@ -145,10 +135,12 @@ main {
 
 .sample-info {
   flex: 1;
+  display: flex;
+  align-items: center;
 }
 
 .sample-link-icon {
-  margin-right: 0.25rem;
+  margin-right: 0.5rem;
 }
 
 .sample-title {
