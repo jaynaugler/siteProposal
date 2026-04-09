@@ -120,6 +120,7 @@ body {
   background-color: var(--bg-color);
   color: var(--text-main);
   font-family: Arial, Helvetica, sans-serif;
+  cursor: url('Images/icons8-cursor.svg'), auto;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -210,6 +211,7 @@ section {
 .menuOptionsText:hover {
   color: var(--accent-color); 
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  cursor: url('Images/icons8-hand-cursor.svg'), pointer;
 }
 
 .applyBtn {
@@ -225,6 +227,10 @@ section {
 }
 
 .applyBtn:hover {
+  background-color: white;
+  color:#10477b;
+  border: 1px solid #10477b;
+  cursor: url('Images/icons8-hand-cursor.svg'), pointer;
   background-color: var(--bg-section);
   color: var(--apply-btn-bg);
   border: 1px solid var(--apply-btn-bg);
@@ -268,6 +274,9 @@ section {
 }
 
 #curricBtn:hover {
+  background-color: #3e719f;
+  color:gainsboro;
+  cursor: url('Images/icons8-hand-cursor.svg'), pointer;
   background-color: var(--accent-color);
   color: var(--bg-section);
 }
@@ -502,6 +511,13 @@ i {
 }
 
 .roadmapCardDivs:hover {
+    background-color: white;
+    margin: 0.5rem;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
+    border: none;
+    cursor: url('Images/icons8-hand-cursor.svg'), pointer;
   background-color: var(--bg-section); 
   margin: 0.5rem;
   padding: 2rem;
@@ -541,6 +557,7 @@ background-color: var(--apply-btn-bg);
   border-radius: 10px;
   box-shadow: 2px 4px 4px var(--apply-btn-shadow);
   border: none;
+  cursor: url('Images/icons8-hand-cursor.svg'), pointer;
 }
 
 #recordsEnrolmentDiv:active {
@@ -601,4 +618,5 @@ background-color: var(--apply-btn-bg);
   width: 20rem;
   justify-content: right;
   align-items: center;
+  padding: 0.5rem;
 }
