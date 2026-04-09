@@ -1,161 +1,168 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to E-Campus</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header>
-      <!-- Menu bar -->
-      <nav id="menuBarDiv">
-        <div class="menuBarInnerDivs">
-          <img
-            src="/Images/nsccLogo.png"
-            alt="Nova Scotia Community College logo"
-            id="nsccLogo"
-          />
-        </div>
-        <div class="menuBarInnerDivs">
-          <ul class="menuOptionsTextDiv">
-            <li><a href="#" class="menuOptionsText">Curriculum</a></li>
-            <li><a href="#" class="menuOptionsText">Requirements</a></li>
-            <li><a href="#" class="menuOptionsText">Faculty</a></li>
-            <li><a href="#" class="menuOptionsText">Schedule</a></li>
-          </ul>
-        </div>
-        <div class="menuBarInnerDivs">
-          <button class="applyBtn">Apply Now</button>
-        </div>
-      </nav>
-    </header>
 
-    <main>
-      <!-- Hero section -->
-      <section id="heroDiv" class="hero">
-        <div class="container">
-          <div id="heroText" class="hero-content">
-            <h1 id="heroHeaderBlackText" class="hero-title">
-              eCampus IT
-              <span class="hero-title-accent">Programming</span>
-              <span class="hero-title-accent">Diploma</span>
-            </h1>
-            <p id="heroParagraph" class="hero-description">
-              Build your future in software engineering with an industry-aligned
-              curriculum designed for the modern tech landscape.
-            </p>
-            <div id="heroBtnsDiv" class="hero-actions">
-              <button class="applyBtn">Apply Now</button>
-              <button id="curricBtn" class="btn-secondary">
-                View Curriculum
-              </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to E-Campus</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/duotone/style.css" />
+</head>
+
+<body>
+  <header>
+    <!-- Menu bar -->
+    <nav id="menuBarDiv">
+      <div class="menuBarInnerDivs">
+        <img src="/Images/nsccLogo.png" alt="Nova Scotia Community College logo" id="nsccLogo" />
+      </div>
+      <div class="menuBarInnerDivs">
+        <ul class="menuOptionsTextDiv">
+          <li><a href="#" class="menuOptionsText">Curriculum</a></li>
+          <li><a href="#" class="menuOptionsText">Requirements</a></li>
+          <li><a href="#" class="menuOptionsText">Faculty</a></li>
+          <li><a href="#" class="menuOptionsText">Schedule</a></li>
+        </ul>
+      </div>
+      <div class="menuBarInnerDivs">
+        <button class="applyBtn">Apply Now</button>
+        <button id="themeToggle" class="applyBtn">
+          🌓 Toggle Theme
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero section -->
+    <section id=" heroDiv" class="hero">
+      <div class="container">
+        <div id="heroText" class="hero-content">
+          <h1 id="heroHeaderBlackText" class="hero-title">
+            eCampus IT
+            <span class="hero-title-accent">Programming</span>
+            <span class="hero-title-accent">Diploma</span>
+          </h1>
+          <p id="heroParagraph" class="hero-description">
+            Build your future in software engineering with an industry-aligned
+            curriculum designed for the modern tech landscape.
+          </p>
+          <div id="heroBtnsDiv" class="hero-actions">
+            <button class="applyBtn">Apply Now</button>
+            <button id="curricBtn" class="btn-secondary">
+              View Curriculum
+            </button>
+          </div>
+        </div>
+        <div id="heroImageDiv" class="hero-media">
+          <img src="/Images/joshua-reddekopp-SyYmXSDnJ54-unsplash.png" alt="" id="heroImage" class="hero-img" />
+        </div>
+      </div>
+    </section>
+
+    <!-- "Welcome to..." section -->
+    <section id="welcomeToDiv">
+      <div class="container">
+        <div id="welcomeHeaderText">
+          <h4 id="welcomeText">WELCOME TO ECAMPUS</h4>
+          <h2 id="nextGenHeaderText">Engineering Next-Gen Developers</h2>
+        </div>
+        <div id="welcomeBodyText">
+          <p class="welcomeBody">
+            The IT Programming Diploma is more than just a course; it's a
+            rigorous, architectural journey into the world of software
+            development. We bridge the gap between academic theory and
+            professional execution.
+          </p>
+          <p class="welcomeBody">
+            Our program is designed for those who seek structure, depth, and a
+            direct pathway into the tech industry. With a focus on clean code,
+            system design, and collaborative workflows, you will graduate
+            ready to contribute to world-class engineering teams.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- "Program Specs" section -->
+    <section id="progSpecsCohortDiv">
+      <div class="container">
+        <div id="progCohortOuterDiv">
+          <div id="programDelDiv">
+            <div id="progCardHeaderItems">
+              <img src="/Images/desktop-tower-duotone.svg" alt="" id="computerIcon" />
+              <h4 id="cardHeaderText">Program Delivery</h4>
             </div>
-          </div>
-          <div id="heroImageDiv" class="hero-media">
-            <img
-              src="/Images/joshua-reddekopp-SyYmXSDnJ54-unsplash.png"
-              alt=""
-              id="heroImage"
-              class="hero-img"
-            />
-          </div>
-        </div>
-      </section>
-
-      <!-- "Welcome to..." section -->
-      <section id="welcomeToDiv">
-        <div class="container">
-          <div id="welcomeHeaderText">
-            <h4 id="welcomeText">WELCOME TO ECAMPUS</h4>
-            <h2 id="nextGenHeaderText">Engineering Next-Gen Developers</h2>
-          </div>
-          <div id="welcomeBodyText">
-            <p class="welcomeBody">
-              The IT Programming Diploma is more than just a course; it's a
-              rigorous, architectural journey into the world of software
-              development. We bridge the gap between academic theory and
-              professional execution.
-            </p>
-            <p class="welcomeBody">
-              Our program is designed for those who seek structure, depth, and a
-              direct pathway into the tech industry. With a focus on clean code,
-              system design, and collaborative workflows, you will graduate
-              ready to contribute to world-class engineering teams.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- "Program Specs" section -->
-      <section id="progSpecsCohortDiv">
-        <div class="container">
-          <div id="progCohortOuterDiv">
-            <div id="programDelDiv">
-              <div id="progCardHeaderItems">
-                <img
-                  src="/Images/desktop-tower-duotone.svg"
-                  alt=""
-                  id="computerIcon"
-                />
-                <h4 id="cardHeaderText">Program Delivery</h4>
-              </div>
-              <div class="progDivCardInnerDivs">
-                <div class="progDivCardInnerDivHeader">
-                  <img
-                    src="/Images/arrows-clockwise.svg"
-                    alt=""
-                    class="progCardIcons"
-                  />
-                  <div>
-                    <h5 class="progCardHeaderText">Fully Synchronous</h5>
-                    <p class="progCardBodyText">
-                      Real-time interaction with instructors and peers.
-                    </p>
-                  </div>
+            <div class="progDivCardInnerDivs">
+              <div class="progDivCardInnerDivHeader">
+                <i class="ph ph-arrows-clockwise"></i>
+                <img src="/Images/arrows-clockwise.svg" alt="" class="progCardIcons" />
+                <div>
+                  <h5 class="progCardHeaderText">Fully Synchronous</h5>
+                  <p class="progCardBodyText">
+                    Real-time interaction with instructors and peers.
+                  </p>
                 </div>
               </div>
-              <div class="progDivCardInnerDivs">
-                <div class="progDivCardInnerDivHeader">
-                  <img src="/Images/cloud.svg" alt="" class="progCardIcons" />
-                  <div>
-                    <h5 class="progCardHeaderText">100% Online</h5>
-                    <p class="progCardBodyText">
-                      Learn from anywhere with a stable internet connection.
-                    </p>
-                  </div>
+            </div>
+            <div class="progDivCardInnerDivs">
+              <div class="progDivCardInnerDivHeader">
+                <img src="/Images/cloud.svg" alt="" class="progCardIcons" />
+                <div>
+                  <h5 class="progCardHeaderText">100% Online</h5>
+                  <p class="progCardBodyText">
+                    Learn from anywhere with a stable internet connection.
+                  </p>
                 </div>
               </div>
-              <div class="progDivCardInnerDivs">
-                <div class="progDivCardInnerDivHeader">
-                  <img
-                    src="/Images/calendar.svg"
-                    alt=""
-                    class="progCardIcons"
-                  />
-                  <div>
-                    <h5 class="progCardHeaderText">Monday to Friday</h5>
-                    <p class="progCardBodyText" id="progCardBottomPara">
-                      Consistent daily schedule designed for immersive learning.
-                    </p>
-                  </div>
+            </div>
+            <div class="progDivCardInnerDivs">
+              <div class="progDivCardInnerDivHeader">
+                <img src="/Images/calendar.svg" alt="" class="progCardIcons" />
+                <div>
+                  <h5 class="progCardHeaderText">Monday to Friday</h5>
+                  <p class="progCardBodyText" id="progCardBottomPara">
+                    Consistent daily schedule designed for immersive learning.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-          <!-- "The Cohort Advantage" section -->
-          <div id="cohortAdvanDiv">
-            <h4 id="cohortCardHeaderText">The Cohort Advantage</h4>
-            <p id="cohortCardBodyText">
-              You won't learn in isolation. Our cohort-based model means you
-              progress through the entire diploma with the same group of
-              aspiring developers, fostering a deep professional network and
-              collaborative environment.
-            </p>
-            <!-- Might add images here. Will come back to it later. -->
-          </div>
         </div>
-      </section>
+        <!-- "The Cohort Advantage" section -->
+        <div id="cohortAdvanDiv">
+          <h4 id="cohortCardHeaderText">The Cohort Advantage</h4>
+          <p id="cohortCardBodyText">
+            You won't learn in isolation. Our cohort-based model means you
+            progress through the entire diploma with the same group of
+            aspiring developers, fostering a deep professional network and
+            collaborative environment.
+          </p>
+          <!-- Might add images here. Will come back to it later. -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Device compatibility notice section -->
+    <section id="deviceCompatDiv">
+      <div class="container">
+        <img src="/Images/warning-duotone.svg" alt="" />
+        <div id="deviceCompatTextDiv">
+          <h4 id="deviceCompatHeader">Device Compatibility Notice</h4>
+          <p>
+            To ensure you can successfully complete all programming tasks and
+            environment setups, please note that
+            <u>Chromebooks and tablets are NOT compatible</u> with this
+            program. A Windows or macOS laptop is required.
+          </p>
+        </div>
+      </div>
+    </section>
 
       <!-- Device compatibility notice section -->
       <section id="deviceCompatDiv">
@@ -166,10 +173,8 @@
           </div>
           <div id="deviceCompatTextDiv">
             <p>
-              To ensure you can successfully complete all programming tasks and
-              environment setups, please note that
-              <u>Chromebooks and tablets are NOT compatible</u> with this
-              program. A Windows or macOS laptop is required.
+              Initial steps, orientation materials, and setting up your
+              development environment.
             </p>
           </div>
         </div>
@@ -283,8 +288,26 @@
             </div>
           </a>
         </div>
-      </section>
-    </main>
+        <div id="recordsEnrolmentDiv">
+          <div class="recordsInnerDivs">
+            <img src="/Images/scroll.svg" alt="" />
+            <h4>Records & Enrolment</h4>
+            <p>
+              Manage your student records and complete your final enrolment
+              steps.
+            </p>
+          </div>
+          <div class="recordsInnerDiv">
+            <img src="/Images/arrow-circle-right-duotone.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer></footer>
+  <script src="script.js"></script>
+</body>
 
     <footer>
       <div class="footerOuterDiv">
