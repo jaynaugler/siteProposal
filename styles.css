@@ -1,3 +1,115 @@
+:root {
+  /* Base Backgrounds & Text */
+  --bg-color-light: rgb(241, 241, 241);
+  --bg-color-dark: rgb(0, 0, 0);
+
+  --text-main-light: rgb(0, 0, 0);
+  --text-main-dark: rgb(241, 241, 241);
+
+  --text-muted-light: rgb(79, 79, 79);
+  --text-muted-dark: rgb(200, 200, 200);
+
+  /* Navigation */
+  --menu-bar-div-light: rgb(62, 113, 159);
+  --menu-bar-div-dark: #10477b;
+
+  --menu-options-text-light: rgb(255, 255, 255);
+  --menu-options-text-dark: rgb(236, 234, 234);
+
+  /* Primary Button (Apply) */
+  --apply-btn-bg-light: rgb(16, 71, 123);
+  --apply-btn-bg-dark: rgb(83, 160, 233);
+
+  --apply-btn-text-light: rgb(255, 255, 255);
+  --apply-btn-text-dark: rgb(0, 0, 0);
+
+  --apply-btn-shadow-light: rgba(0, 0, 0, 0.3);
+  --apply-btn-shadow-dark: rgba(255, 255, 255, 0.3);
+
+  /* Secondary Button (Curriculum) */
+  --secondary-btn-bg-light: gainsboro;
+  --secondary-btn-bg-dark: rgb(45, 45, 45);
+
+  --secondary-btn-text-light: #10477b;
+  --secondary-btn-text-dark: #8ab4f8;
+
+  --secondary-btn-shadow-light: rgba(0, 0, 0, 0.3);
+  --secondary-btn-shadow-dark: rgba(255, 255, 255, 0.1);
+
+  /* Accents & Highlights */
+  --accent-color-light: #10477b;
+  --accent-color-dark: #8ab4f8;
+
+  --hero-img-shadow-light: rgba(0, 0, 0, 0.2);
+  --hero-img-shadow-dark: rgba(255, 255, 255, 0.05);
+
+  /* Sections & Cards */
+  --bg-section-light: white;
+  --bg-section-dark: rgb(30, 30, 30);
+
+  --card-bg-muted-light: rgb(222, 222, 222);
+  --card-bg-muted-dark: rgb(45, 45, 45);
+
+  --icon-bg-light: #96c1e7b8;
+  --icon-bg-dark: rgba(150, 193, 231, 0.2);
+
+  /* Alerts (Device Compatibility) */
+  --alert-bg-light: rgba(251, 153, 146, 0.431);
+  --alert-bg-dark: rgba(253, 73, 61, 0.514);
+
+  --alert-border-light: rgb(231, 19, 19);
+  --alert-border-dark: rgb(255, 99, 71);
+
+  --alert-text-light: rgb(162, 13, 13);
+  --alert-text-dark: rgb(255, 154, 154);
+
+  /* Map the default theme (light mode) */
+  --bg-color: var(--bg-color-light);
+  --text-main: var(--text-main-light);
+  --text-muted: var(--text-muted-light);
+  --menu-bar-div: var(--menu-bar-div-light);
+  --menu-options-text: var(--menu-options-text-light);
+  --apply-btn-bg: var(--apply-btn-bg-light);
+  --apply-btn-text: var(--apply-btn-text-light);
+  --apply-btn-shadow: var(--apply-btn-shadow-light);
+  --secondary-btn-bg: var(--secondary-btn-bg-light);
+  --secondary-btn-text: var(--secondary-btn-text-light);
+  --secondary-btn-shadow: var(--secondary-btn-shadow-light);
+  --accent-color: var(--accent-color-light);
+  --hero-img-shadow: var(--hero-img-shadow-light);
+  --bg-section: var(--bg-section-light);
+  --card-bg-muted: var(--card-bg-muted-light);
+  --icon-bg: var(--icon-bg-light);
+  --alert-bg: var(--alert-bg-light);
+  --alert-border: var(--alert-border-light);
+  --alert-text: var(--alert-text-light);
+}
+
+/* Dark mode colour assignment */
+[data-theme="dark"] {
+  --bg-color: var(--bg-color-dark);
+  --text-main: var(--text-main-dark);
+  --text-muted: var(--text-muted-dark);
+  --menu-bar-div: var(--menu-bar-div-dark);
+  --menu-options-text: var(--menu-options-text-dark);
+  --apply-btn-bg: var(--apply-btn-bg-dark);
+  --apply-btn-text: var(--apply-btn-text-dark);
+  --apply-btn-shadow: var(--apply-btn-shadow-dark);
+  --secondary-btn-bg: var(--secondary-btn-bg-dark);
+  --secondary-btn-text: var(--secondary-btn-text-dark);
+  --secondary-btn-shadow: var(--secondary-btn-shadow-dark);
+  --accent-color: var(--accent-color-dark);
+  --hero-img-shadow: var(--hero-img-shadow-dark);
+  --bg-section: var(--bg-section-dark);
+  --card-bg-muted: var(--card-bg-muted-dark);
+  --icon-bg: var(--icon-bg-dark);
+  --alert-bg: var(--alert-bg-dark);
+  --alert-border: var(--alert-border-dark);
+  --alert-text: var(--alert-text-dark);
+}
+
+/* Start of CSS styling */
+
 * {
   margin: 0;
   padding: 0;
@@ -5,23 +117,29 @@
 }
 
 body {
-  background-color: rgb(241, 241, 241);
+  background-color: var(--bg-color);
+  color: var(--text-main);
   font-family: Arial, Helvetica, sans-serif;
   cursor: url('Images/icons8-cursor.svg'), auto;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 h2 {
   margin-bottom: 0.75em;
 }
+
 h3 {
   margin-bottom: 0.83em;
 }
+
 h4 {
   margin-bottom: 1em;
 }
+
 h5 {
   margin-bottom: 1em;
 }
+
 h6 {
   margin-bottom: 1em;
 }
@@ -40,6 +158,14 @@ section {
   margin: 0 auto;
 }
 
+#themeToggle {
+  margin-left: 1rem;
+  background-color: var(--secondary-btn-bg);
+  color: var(--secondary-btn-text);
+  font-size: 90%;
+  cursor: pointer;
+}
+
 /* Menu Bar */
 #menuBarDiv {
   display: flex;
@@ -48,7 +174,7 @@ section {
   align-items: center;
   gap: 16px;
   padding: 8px;
-  background-color: #3e719f;
+  background-color: var(--menu-bar-div);
 }
 
 .menuBarInnerDivs {
@@ -76,27 +202,28 @@ section {
 .menuOptionsText {
   font-weight: 600;
   font-size: 1.15rem;
-  color: white;
+  color: var(--menu-options-text);
   text-decoration: none;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
 
 .menuOptionsText:hover {
-  color:rgb(187, 187, 187);
+  color: var(--accent-color); 
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   cursor: url('Images/icons8-hand-cursor.svg'), pointer;
 }
 
 .applyBtn {
   padding: 12px 16px;
-  background-color: #10477b;
-  color: white;
+  background-color: var(--apply-btn-bg);
+  color: var(--apply-btn-text);
   font-weight: bold;
   font-size: 1rem;
   border-radius: 10px;
-  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
-  border: none;
+  box-shadow: 2px 4px 4px var(--apply-btn-shadow);
+  border: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
 }
 
 .applyBtn:hover {
@@ -104,6 +231,9 @@ section {
   color:#10477b;
   border: 1px solid #10477b;
   cursor: url('Images/icons8-hand-cursor.svg'), pointer;
+  background-color: var(--bg-section);
+  color: var(--apply-btn-bg);
+  border: 1px solid var(--apply-btn-bg);
 }
 
 /* Hero Section */
@@ -133,12 +263,12 @@ section {
   justify-content: center;
   align-self: center;
   align-items: center;
-  background-color: gainsboro;
-  color: #10477b;
+  background-color: var(--secondary-btn-bg);
+  color: var(--secondary-btn-text);
   font-weight: bold;
   font-size: 1rem;
   border-radius: 10px;
-  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 4px 4px var(--secondary-btn-shadow);
   border: none;
   padding: 12px 16px;
 }
@@ -147,6 +277,8 @@ section {
   background-color: #3e719f;
   color:gainsboro;
   cursor: url('Images/icons8-hand-cursor.svg'), pointer;
+  background-color: var(--accent-color);
+  color: var(--bg-section);
 }
 
 #heroImage,
@@ -154,7 +286,7 @@ section {
   height: 325px;
   width: auto;
   border-radius: 10px;
-  box-shadow: -12px 12px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: -12px 12px 0 var(--hero-img-shadow);
 }
 
 #heroImageDiv,
@@ -171,7 +303,7 @@ section {
 
 .hero-title-accent {
   display: block;
-  color: #10477b;
+  color: var(--accent-color);
 }
 
 #heroParagraph,
@@ -183,7 +315,7 @@ section {
 
 /* Welcome To section */
 #welcomeToDiv {
-  background-color: white;
+  background-color: var(--bg-section);
 }
 
 #welcomeToDiv .container {
@@ -201,7 +333,7 @@ section {
 #welcomeText {
   font-size: 1rem;
   font-weight: 300;
-  color: #10477b;
+  color: var(--accent-color);
 }
 
 #nextGenHeaderText {
@@ -218,7 +350,7 @@ section {
   width: 50%;
   margin: 0 auto;
   font-size: 1rem;
-  color: rgb(79, 79, 79);
+  color: var(--text-muted);
 }
 
 .welcomeBody {
@@ -240,7 +372,7 @@ section {
 #programDelDiv {
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: var(--bg-section);
   border-radius: 10px;
   padding: 1.5rem;
   gap: 0.75rem;
@@ -254,8 +386,8 @@ section {
 }
 
 #computerIcon {
-  height: 2rem;
-  background-color: #96c1e7b8;
+  font-size: 2rem;
+  background-color: var(--icon-bg);
   padding: 0.25rem;
   border-radius: 7px;
 }
@@ -283,14 +415,14 @@ section {
   font-size: 1.1rem;
 }
 
-.progCardIcons {
-  height: 25px;
+i {
+  font-size: 25px; 
   align-self: flex-start;
 }
 
 .progCardBodyText {
   font-size: 1rem;
-  color: rgb(79, 79, 79);
+  color: var(--text-muted);
 }
 
 #progCardBottomPara {
@@ -299,7 +431,7 @@ section {
 
 /* Cohort Advantage card */
 #cohortAdvanDiv {
-  background-color: rgb(222, 222, 222);
+  background-color: var(--card-bg-muted);
   border-radius: 10px;
   padding: 1.5rem;
 }
@@ -311,7 +443,7 @@ section {
 }
 
 #cohortCardBodyText {
-  color: rgb(79, 79, 79);
+  color: var(--text-muted);
   line-height: 1.5;
 }
 
@@ -322,11 +454,11 @@ section {
 }
 
 #deviceCompatDiv .container {
-  background-color: rgba(251, 153, 146, 0.431);
-  border-left: 5px solid rgb(231, 19, 19);
+  background-color: var(--alert-bg);
+  border-left: 5px solid var(--alert-border);
   border-radius: 10px;
-  padding: 2rem;
-  color: rgb(162, 13, 13);
+  padding: 1rem;
+  color: var(--alert-text);
 }
 
 .deviceCompatHeadImageDiv {
@@ -361,7 +493,7 @@ section {
 
 #roadmapHeaderPara {
   margin-bottom: 2rem;
-  color: rgb(79, 79, 79);
+  color: var(--text-muted);
 }
 
 #roadmapCardsOuterDiv {
@@ -372,10 +504,10 @@ section {
 }
 
 .roadmapCardDivs {
-    background-color: white;
-    margin: 0.5rem;
-    padding: 2rem;
-    border-radius: 10px;
+  background-color: var(--bg-section); 
+  margin: 0.5rem;
+  padding: 2rem;
+  border-radius: 10px;
 }
 
 .roadmapCardDivs:hover {
@@ -386,9 +518,15 @@ section {
     box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
     border: none;
     cursor: url('Images/icons8-hand-cursor.svg'), pointer;
+  background-color: var(--bg-section); 
+  margin: 0.5rem;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 2px 4px 4px var(--apply-btn-shadow);
+  border: none;
 }
 
-.roadmapCardDivs:clicked {
+.roadmapCardDivs:active { 
   text-decoration: none;
   color: inherit;
 }
@@ -403,8 +541,8 @@ section {
   margin-top: 2rem;
   display: flex;
   justify-content: space-between;
-  background-color: #10477b;
-  color: white;
+background-color: var(--apply-btn-bg); 
+  color: var(--apply-btn-text);
   padding: 2rem;
   border-radius: 10px;
 }
@@ -413,16 +551,16 @@ section {
   margin-top: 2rem;
   display: flex;
   justify-content: space-between;
-  background-color: #10477b;
-  color: white;
+  background-color: var(--apply-btn-bg);
+  color: var(--apply-btn-text);
   padding: 2rem;
   border-radius: 10px;
-  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 4px 4px var(--apply-btn-shadow);
   border: none;
   cursor: url('Images/icons8-hand-cursor.svg'), pointer;
 }
 
-#recordsEnrolmentDiv:clicked {
+#recordsEnrolmentDiv:active {
   text-decoration: none;
   color: inherit;
 }
@@ -439,7 +577,7 @@ section {
 }
 
 #scrollIcon {
-  height: 2.5rem;
+  font-size: 2.5rem;
 }
 
 #RecordEnrolmentArrow {
@@ -451,7 +589,7 @@ section {
   display: flex;
   justify-content: space-between;
   padding: 2.5rem;
-  background-color: white;
+  background-color: var(--bg-section);
 }
 
 .footerHeaderTextDiv {
