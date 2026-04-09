@@ -87,7 +87,7 @@
 
 /* Dark mode colour assignment */
 [data-theme="dark"] {
-    --bg-color: var(--bg-color-dark);
+  --bg-color: var(--bg-color-dark);
   --text-main: var(--text-main-dark);
   --text-muted: var(--text-muted-dark);
   --menu-bar-div: var(--menu-bar-div-dark);
@@ -153,11 +153,11 @@ section {
 }
 
 #themeToggle {
-margin-left: 1rem; 
- background-color: var(--secondary-btn-bg);
- color: var(--secondary-btn-text);
- font-size: 90%;
- cursor: pointer;
+  margin-left: 1rem;
+  background-color: var(--secondary-btn-bg);
+  color: var(--secondary-btn-text);
+  font-size: 90%;
+  cursor: pointer;
 }
 
 /* Menu Bar */
@@ -210,9 +210,6 @@ margin-left: 1rem;
 }
 
 /* Hero Section */
-#heroDiv,
-.hero {}
-
 #heroDiv .container,
 .hero .container {
   display: flex;
@@ -353,7 +350,7 @@ margin-left: 1rem;
 }
 
 #computerIcon {
-  height: 2rem;
+  font-size: 2rem;
   background-color: var(--icon-bg);
   padding: 0.25rem;
   border-radius: 7px;
@@ -364,8 +361,6 @@ margin-left: 1rem;
   font-weight: 200;
   margin-bottom: 0;
 }
-
-.progDivCardInnerDivs {}
 
 .progDivCardInnerDivHeader {
   display: inline-flex;
@@ -381,7 +376,7 @@ margin-left: 1rem;
 }
 
 .progCardIcons {
-  height: 25px;
+  font-size: 25px;
   align-self: flex-start;
 }
 
@@ -425,4 +420,3 @@ margin-left: 1rem;
   padding: 1rem;
   color: var(--alert-text);
 }
-

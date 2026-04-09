@@ -25,6 +25,9 @@ themeToggleBtn.addEventListener('click', () => {
 
   // Apply the new theme to the HTML tag
   document.documentElement.setAttribute('data-theme', targetTheme);
+
+  // Swap the icons
+    
   
   // Save the new theme to localStorage so it remembers for next time
   localStorage.setItem('userTheme', targetTheme);
