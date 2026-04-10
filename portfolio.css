@@ -238,6 +238,7 @@ details[open] .timeline-chevron {
   border: 1px solid var(--primary-color);
   padding: 0.5rem 0.75rem;
   border-radius: 12px;
+  text-align: center;
 }
 
 .featured-article .btn-outline {
@@ -245,6 +246,17 @@ details[open] .timeline-chevron {
   color: var(--primary-color);
   padding: 0.5rem 0.75rem;
   border-radius: 12px;
+  text-align: center;
+}
+
+@media (max-width: 576px) {
+  #screencast-video {
+    height: 300px;
+  }
+
+  .featured-card-actions {
+    flex-direction: column;
+  }
 }
 
 /* === Roadmap === */
@@ -382,4 +394,10 @@ details[open] .timeline-chevron {
 
 .tip-text {
   font-style: italic;
+}
+
+@media (max-width: 576px) {
+  .tips-grid {
+    flex-direction: column;
+  }
 }
