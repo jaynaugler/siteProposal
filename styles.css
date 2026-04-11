@@ -121,6 +121,13 @@
 
 /* Start of CSS styling */
 
+/* Additional Accessibility Features */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    transition-duration: 0.01ms !important;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
