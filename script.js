@@ -55,3 +55,40 @@ applyButtons.forEach(button => {
         });
     });
 });
+
+    // Functionality for progress bar on portfolio page
+      const bar = document.getElementById("reading-progress");
+      window.addEventListener("scroll", () => {
+        // how far was scrolled
+        const scrolled = window.scrollY;
+        // document.documentElement.scrollHeight — the total height of the entire page
+        // window.innerHeight — the visible viewport height
+        // calculate how much can be scrolled
+        const total =
+          document.documentElement.scrollHeight - window.innerHeight;
+        // safety check and percentage calculation of progress bar
+        const progress =
+          total > 0 ? Math.min((scrolled / total) * 100, 100) : 0;
+        bar.style.width = progress + "%";
+      });
+
+      // Side bar navigation
+      const sidebar = document.getElementById("sidebar");
+      const sidebarOpen = document.getElementById("sidebar-open");
+      const sidebarClose = document.getElementById("sidebar-toggle");
+      const sidebarOverlay = document.getElementById("sidebar-overlay");
+
+      function openSidebar() {
+        sidebar.classList.add("sidebar--open");
+        sidebarOverlay.classList.add("sidebar-overlay--visible");
+      }
+
+      function closeSidebar() {
+        sidebar.classList.remove("sidebar--open");
+        sidebarOverlay.classList.remove("sidebar-overlay--visible");
+      }
+
+      sidebarOpen.addEventListener("click", openSidebar);
+      sidebarClose.addEventListener("click", closeSidebar);
+      sidebarOverlay.addEventListener("click", closeSidebar);
+ 

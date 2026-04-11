@@ -1,353 +1,306 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to E-Campus</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/duotone/style.css"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="favicon/site.webmanifest" />
-  </head>
 
-  <body>
-    <header>
-      <nav id="menuBarDiv">
-        <div class="menuBarInnerDivs">
-          <a href="#">
-            <img
-              src="/Images/nsccLogo.png"
-              alt="Nova Scotia Community College logo"
-              id="nsccLogo"
-            />
-          </a>
-        </div>
-        <div class="menuBarInnerDivs">
-          <ul class="menuOptionsTextDiv">
-            <li><a href="#" class="menuOptionsText">Curriculum</a></li>
-            <li><a href="#" class="menuOptionsText">Requirements</a></li>
-            <li><a href="#" class="menuOptionsText">Faculty</a></li>
-            <li><a href="#" class="menuOptionsText">Schedule</a></li>
-          </ul>
-        </div>
-        <div class="menuBarInnerDivs">
-          <button class="applyBtn">Apply Now</button>
-          <button id="themeToggle" class="applyBtn">🌓 Toggle Theme</button>
-        </div>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to E-Campus</title>
+  <link rel="stylesheet" href="styles.css" />
 
-    <main>
-      <section id="heroDiv" class="hero">
-        <div class="container">
-          <div id="heroText" class="hero-content">
-            <h1 id="heroHeaderBlackText" class="hero-title">
-              eCampus IT
-              <span class="hero-title-accent">Programming</span>
-              <span class="hero-title-accent">Diploma</span>
-            </h1>
-            <p id="heroParagraph" class="hero-description">
-              Build your future in software engineering with an industry-aligned
-              curriculum designed for the modern tech landscape.
-            </p>
-            <div id="heroBtnsDiv" class="hero-actions">
-              <button class="applyBtn">Apply Now</button>
-              <button id="curricBtn" class="btn-secondary">
-                View Curriculum
-              </button>
-            </div>
-          </div>
-          <div id="heroImageDiv" class="hero-media">
-            <img
-              src="/Images/joshua-reddekopp-SyYmXSDnJ54-unsplash.png"
-              alt=""
-              id="heroImage"
-              class="hero-img"
-            />
-          </div>
-        </div>
-      </section>
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/duotone/style.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+  <link rel="manifest" href="favicon/site.webmanifest" />
+</head>
 
-      <section id="welcomeToDiv">
-        <div class="container">
-          <div id="welcomeHeaderText">
-            <h4 id="welcomeText">WELCOME TO ECAMPUS</h4>
-            <h2 id="nextGenHeaderText">Engineering Next-Gen Developers</h2>
-          </div>
-          <div id="welcomeBodyText">
-            <p class="welcomeBody">
-              The IT Programming Diploma is more than just a course; it's a
-              rigorous, architectural journey into the world of software
-              development. We bridge the gap between academic theory and
-              professional execution.
-            </p>
-            <p class="welcomeBody">
-              Our program is designed for those who seek structure, depth, and a
-              direct pathway into the tech industry. With a focus on clean code,
-              system design, and collaborative workflows, you will graduate
-              ready to contribute to world-class engineering teams.
-            </p>
-          </div>
-        </div>
-      </section>
+<body>
+  <div id="reading-progress"></div>
+  <header>
+    <nav id="menuBarDiv" aria-label="Main Navigation">
+      <div class="menuBarInnerDivs">
+        <a href="#">
+          <img src="/Images/nsccLogo.png" alt="Nova Scotia Community College logo" id="nsccLogo" />
+        </a>
+      </div>
+      <div class="menuBarInnerDivs">
+        <ul class="menuOptionsTextDiv">
+          <li><a href="#" class="menuOptionsText">Curriculum</a></li>
+          <li><a href="#" class="menuOptionsText">Requirements</a></li>
+          <li><a href="#" class="menuOptionsText">Faculty</a></li>
+          <li><a href="#" class="menuOptionsText">Schedule</a></li>
+        </ul>
+      </div>
+      <div class="menuBarInnerDivs">
+        <button class="applyBtn">Apply Now</button>
+        <button id="themeToggle" class="applyBtn"><span aria-hidden="true">🌓</span> Toggle Theme</button>
+      </div>
+    </nav>
+  </header>
 
-      <section id="progSpecsCohortDiv">
-        <div class="container">
-          <div id="progCohortOuterDiv">
-            <div id="programDelDiv">
-              <div id="progCardHeaderItems">
-                <i class="ph-duotone ph-desktop-tower" id="computerIcon"></i>
-                <h4 id="cardHeaderText">Program Delivery</h4>
-              </div>
-              <div class="progDivCardInnerDivs">
-                <div class="progDivCardInnerDivHeader">
-                  <i class="ph ph-arrows-clockwise progCardIcons"></i>
-                  <div>
-                    <h5 class="progCardHeaderText">Fully Synchronous</h5>
-                    <p class="progCardBodyText">
-                      Real-time interaction with instructors and peers.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="progDivCardInnerDivs">
-                <div class="progDivCardInnerDivHeader">
-                  <i class="ph ph-cloud progCardIcons"></i>
-                  <div>
-                    <h5 class="progCardHeaderText">100% Online</h5>
-                    <p class="progCardBodyText">
-                      Learn from anywhere with a stable internet connection.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="progDivCardInnerDivs">
-                <div class="progDivCardInnerDivHeader">
-                  <i class="ph ph-calendar progCardIcons"></i>
-                  <div>
-                    <h5 class="progCardHeaderText">Monday to Friday</h5>
-                    <p class="progCardBodyText" id="progCardBottomPara">
-                      Consistent daily schedule designed for immersive learning.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="cohortAdvanDiv">
-            <h4 id="cohortCardHeaderText">The Cohort Advantage</h4>
-            <p id="cohortCardBodyText">
-              You won't learn in isolation. Our cohort-based model means you
-              progress through the entire diploma with the same group of
-              aspiring developers, fostering a deep professional network and
-              collaborative environment.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="deviceCompatDiv">
-        <div class="container">
-          <div class="deviceCompatHeadImageDiv">
-            <i class="ph-duotone ph-warning"></i>
-            <h4 id="deviceCompatHeader">Device Compatibility Notice</h4>
-          </div>
-          <div id="deviceCompatTextDiv">
-            <p>
-              To ensure you can successfully complete all programming tasks and
-              environment setups, please note that
-              <u>Chromebooks and tablets are NOT compatible</u> with this
-              program. A Windows or macOS laptop is required.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="roadmapDiv">
-        <div class="container">
-          <div id="roadmapHeaderDiv">
-            <h3 id="roadmapHeaderText">Your Roadmap to Success</h3>
-            <p id="roadmapHeaderPara">
-              Explore the essential steps and resources for a successful journey
-              to graduation.
-            </p>
-          </div>
-          <div id="roadmapCardsOuterDiv">
-            <a
-              href="https://share.articulate.com/0JODbZtyaoFL4AVQ9aMoo#/lessons/qp6BzhnPQ9IoBJJWk3jLz6Oms5Tqs5rc"
-            >
-              <div class="roadmapCardDivs">
-                <div class="roadMapIconDivs">
-                  <i class="ph ph-rocket-launch"></i>
-                  <i class="ph-duotone ph-arrow-circle-right"></i>
-                </div>
-                <h4>Get Started</h4>
-                <p>
-                  Initial steps, orientation materials, and setting up your
-                  development environment.
-                </p>
-              </div>
-            </a>
-            <a
-              href="https://share.articulate.com/0JODbZtyaoFL4AVQ9aMoo#/lessons/TGbnBeqNHWR7cc69QOVe9-569ZG0JmT2"
-            >
-              <div class="roadmapCardDivs">
-                <div class="roadMapIconDivs">
-                  <i class="ph ph-info"></i>
-                  <i class="ph-duotone ph-arrow-circle-right"></i>
-                </div>
-                <h4>Program Information</h4>
-                <p>
-                  Detailed course descriptions, learning outcomes, and academic
-                  policies.
-                </p>
-              </div>
-            </a>
-            <a
-              href="https://share.articulate.com/0JODbZtyaoFL4AVQ9aMoo#/lessons/57U94lqNve_-YiZvvBJnnAKH5aeOrR6d"
-            >
-              <div class="roadmapCardDivs">
-                <div class="roadMapIconDivs">
-                  <i class="ph ph-briefcase"></i>
-                  <i class="ph-duotone ph-arrow-circle-right"></i>
-                </div>
-                <h4>Work Experience</h4>
-                <p>
-                  Understand the practicum requirements and industry placement
-                  process.
-                </p>
-              </div>
-            </a>
-            <a href="portfolio.html">
-              <div class="roadmapCardDivs">
-                <div class="roadMapIconDivs">
-                  <i class="ph ph-folder-star"></i>
-                  <i class="ph-duotone ph-arrow-circle-right"></i>
-                </div>
-                <h4>Portfolio</h4>
-                <p>
-                  Showcasing your work to future employers through a curated
-                  professional portfolio.
-                </p>
-              </div>
-            </a>
-            <a
-              href="https://share.articulate.com/0JODbZtyaoFL4AVQ9aMoo#/lessons/QBLOeVncmaDo9q_Zd8AI7clAIVz5-B3I"
-            >
-              <div class="roadmapCardDivs">
-                <div class="roadMapIconDivs">
-                  <i class="ph ph-arrows-split"></i>
-                  <i class="ph-duotone ph-arrow-circle-right"></i>
-                </div>
-                <h4>Alternate Path</h4>
-                <p>
-                  Options for non-traditional backgrounds and specialized entry
-                  routes.
-                </p>
-              </div>
-            </a>
-            <a
-              href="https://share.articulate.com/0JODbZtyaoFL4AVQ9aMoo#/lessons/6rUjPmgKyMnQxGS70E76WWXsk3OFOlny"
-            >
-              <div class="roadmapCardDivs">
-                <div class="roadMapIconDivs">
-                  <i class="ph ph-check-square"></i>
-                  <i class="ph-duotone ph-arrow-circle-right"></i>
-                </div>
-                <h4>Recognition of Prior Learning</h4>
-                <p>
-                  How to credit your existing skills and experience toward your
-                  diploma.
-                </p>
-              </div>
-            </a>
-          </div>
-
-          <a
-            href="https://share.articulate.com/0JODbZtyaoFL4AVQ9aMoo#/lessons/8dAAyyHlg8ek-0FoG_mzrv3Ahlq-wyKA"
-          >
-            <div id="recordsEnrolmentDiv">
-              <div class="scrollHeaderTextDiv">
-                <i class="ph ph-scroll" id="scrollIcon"></i>
-                <div class="recordsInnerDiv">
-                  <h4 id="recordEnrolmentHeaderText">Records & Enrolment</h4>
-                  <p id="enrolmentPara">
-                    Manage your student records and complete your final
-                    enrolment steps.
-                  </p>
-                </div>
-              </div>
-              <div class="recordsInnerDiv">
-                <i
-                  class="ph-duotone ph-arrow-circle-right"
-                  id="RecordEnrolmentArrow"
-                ></i>
-              </div>
-            </div>
-          </a>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <div class="footerOuterDiv">
-        <div class="footerHeaderTextDiv">
-          <h4 id="footerHeader">IT eCampus</h4>
-          <p>Empowering the next generation of software engineers.</p>
-        </div>
-        <div class="footerLinksDiv">
-          <p class="footerLinksText">Privacy Policy</p>
-          <p class="footerLinksText">Technical Support</p>
-          <p class="footerLinksText">Student Portal</p>
-          <p class="footerLinksText">Contact</p>
-        </div>
-        <div class="footerCopyrightText">
-          <p>
-            © 2026 eCampus IT Programming Diploma. Architectural Editorial
-            System.
+  <main>
+    <section id="heroDiv" class="hero">
+      <div class="container">
+        <div id="heroText" class="hero-content">
+          <h1 id="heroHeaderBlackText" class="hero-title">
+            eCampus IT
+            <span class="hero-title-accent">Programming</span>
+            <span class="hero-title-accent">Diploma</span>
+          </h1>
+          <p id="heroParagraph" class="hero-description">
+            Build your future in software engineering with an industry-aligned
+            curriculum designed for the modern tech landscape.
           </p>
-          <p>
-            <a
-              target="_blank"
-              href="https://icons8.com/icon/7Eh5YqvCmikK/hand-cursor"
-              >Cursor</a
-            >
-            icons by <a target="_blank" href="https://icons8.com">Icons8</a>
+          <div id="heroBtnsDiv" class="hero-actions">
+            <button class="applyBtn">Apply Now</button>
+            <button id="curricBtn" class="btn-secondary">
+              View Curriculum
+            </button>
+          </div>
+        </div>
+        <div id="heroImageDiv" class="hero-media">
+          <img src="/Images/partially-open-laptop.png" alt="" id="heroImage" class="hero-img" aria-hidden="true" />
+        </div>
+      </div>
+    </section>
+
+    <section id="welcomeToDiv">
+      <div class="container">
+        <div id="welcomeHeaderText">
+          <h4 id="welcomeText">WELCOME TO ECAMPUS</h4>
+          <h2 id="nextGenHeaderText">Engineering Next-Gen Developers</h2>
+        </div>
+        <div id="welcomeBodyText">
+          <p class="welcomeBody">
+            The IT Programming Diploma is more than just a course; it's a
+            rigorous, architectural journey into the world of software
+            development. We bridge the gap between academic theory and
+            professional execution.
+          </p>
+          <p class="welcomeBody">
+            Our program is designed for those who seek structure, depth, and a
+            direct pathway into the tech industry. With a focus on clean code,
+            system design, and collaborative workflows, you will graduate
+            ready to contribute to world-class engineering teams.
           </p>
         </div>
       </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
-    <script src="script.js"></script>
-  </body>
+    </section>
+
+    <section id="progSpecsCohortDiv">
+      <div class="container">
+        <div id="progCohortOuterDiv">
+          <div id="programDelDiv">
+            <div id="progCardHeaderItems">
+              <i class="ph-duotone ph-desktop-tower" id="computerIcon" aria-hidden="true"></i>
+              <h4 id="cardHeaderText">Program Delivery</h4>
+            </div>
+            <div class="progDivCardInnerDivs">
+              <div class="progDivCardInnerDivHeader">
+                <i class="ph ph-arrows-clockwise progCardIcons" aria-hidden="true"></i>
+                <div>
+                  <h5 class="progCardHeaderText">Fully Synchronous</h5>
+                  <p class="progCardBodyText">
+                    Real-time interaction with instructors and peers.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="progDivCardInnerDivs">
+              <div class="progDivCardInnerDivHeader">
+                <i class="ph ph-cloud progCardIcons" aria-hidden="true"></i>
+                <div>
+                  <h5 class="progCardHeaderText">100% Online</h5>
+                  <p class="progCardBodyText">
+                    Learn from anywhere with a stable internet connection.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="progDivCardInnerDivs">
+              <div class="progDivCardInnerDivHeader">
+                <i class="ph ph-calendar progCardIcons" aria-hidden="true"></i>
+                <div>
+                  <h5 class="progCardHeaderText">Monday to Friday</h5>
+                  <p class="progCardBodyText" id="progCardBottomPara">
+                    Consistent daily schedule designed for immersive learning.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="cohortAdvanDiv">
+          <h4 id="cohortCardHeaderText">The Cohort Advantage</h4>
+          <p id="cohortCardBodyText">
+            You won't learn in isolation. Our cohort-based model means you
+            progress through the entire diploma with the same group of
+            aspiring developers, fostering a deep professional network and
+            collaborative environment.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="deviceCompatDiv">
+      <div class="container">
+        <div class="deviceCompatHeadImageDiv">
+          <i class="ph-duotone ph-warning" aria-hidden="true"></i>
+          <h4 id="deviceCompatHeader">Device Compatibility Notice</h4>
+        </div>
+        <div id="deviceCompatTextDiv">
+          <p>
+            To ensure you can successfully complete all programming tasks and
+            environment setups, please note that
+            <u>Chromebooks and tablets are NOT compatible</u> with this
+            program. A Windows or macOS laptop is required.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="roadmapDiv">
+      <div class="container">
+        <div id="roadmapHeaderDiv">
+          <h3 id="roadmapHeaderText">Your Roadmap to Success</h3>
+          <p id="roadmapHeaderPara">
+            Explore the essential steps and resources for a successful journey
+            to graduation.
+          </p>
+        </div>
+        <div id="roadmapCardsOuterDiv">
+          <a href="https://share.articulate.com/0JODbZtyaoFL4AVQ9aMoo#/lessons/qp6BzhnPQ9IoBJJWk3jLz6Oms5Tqs5rc">
+            <div class="roadmapCardDivs">
+              <div class="roadMapIconDivs">
+                <i class="ph ph-rocket-launch" aria-hidden="true"></i>
+                <i class="ph-duotone ph-arrow-circle-right" aria-hidden="true"></i>
+              </div>
+              <h4>Get Started</h4>
+              <p>
+                Initial steps, orientation materials, and setting up your
+                development environment.
+              </p>
+            </div>
+          </a>
+          <a href="https://share.articulate.com/0JODbZtyaoFL4AVQ9aMoo#/lessons/TGbnBeqNHWR7cc69QOVe9-569ZG0JmT2">
+            <div class="roadmapCardDivs">
+              <div class="roadMapIconDivs">
+                <i class="ph ph-info" aria-hidden="true"></i>
+                <i class="ph-duotone ph-arrow-circle-right" aria-hidden="true"></i>
+              </div>
+              <h4>Program Information</h4>
+              <p>
+                Detailed course descriptions, learning outcomes, and academic
+                policies.
+              </p>
+            </div>
+          </a>
+          <a href="https://share.articulate.com/0JODbZtyaoFL4AVQ9aMoo#/lessons/57U94lqNve_-YiZvvBJnnAKH5aeOrR6d">
+            <div class="roadmapCardDivs">
+              <div class="roadMapIconDivs">
+                <i class="ph ph-briefcase" aria-hidden="true"></i>
+                <i class="ph-duotone ph-arrow-circle-right" aria-hidden="true"></i>
+              </div>
+              <h4>Work Experience</h4>
+              <p>
+                Understand the practicum requirements and industry placement
+                process.
+              </p>
+            </div>
+          </a>
+          <a href="portfolio.html">
+            <div class="roadmapCardDivs">
+              <div class="roadMapIconDivs">
+                <i class="ph ph-folder-star" aria-hidden="true"></i>
+                <i class="ph-duotone ph-arrow-circle-right" aria-hidden="true"></i>
+              </div>
+              <h4>Portfolio</h4>
+              <p>
+                Showcasing your work to future employers through a curated
+                professional portfolio.
+              </p>
+            </div>
+          </a>
+          <a href="https://share.articulate.com/0JODbZtyaoFL4AVQ9aMoo#/lessons/QBLOeVncmaDo9q_Zd8AI7clAIVz5-B3I">
+            <div class="roadmapCardDivs">
+              <div class="roadMapIconDivs">
+                <i class="ph ph-arrows-split" aria-hidden="true"></i>
+                <i class="ph-duotone ph-arrow-circle-right" aria-hidden="true"></i>
+              </div>
+              <h4>Alternate Path</h4>
+              <p>
+                Options for non-traditional backgrounds and specialized entry
+                routes.
+              </p>
+            </div>
+          </a>
+          <a href="https://share.articulate.com/0JODbZtyaoFL4AVQ9aMoo#/lessons/6rUjPmgKyMnQxGS70E76WWXsk3OFOlny">
+            <div class="roadmapCardDivs">
+              <div class="roadMapIconDivs">
+                <i class="ph ph-check-square" aria-hidden="true"></i>
+                <i class="ph-duotone ph-arrow-circle-right" aria-hidden="true"></i>
+              </div>
+              <h4>Recognition of Prior Learning</h4>
+              <p>
+                How to credit your existing skills and experience toward your
+                diploma.
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <a href="https://share.articulate.com/0JODbZtyaoFL4AVQ9aMoo#/lessons/8dAAyyHlg8ek-0FoG_mzrv3Ahlq-wyKA">
+          <div id="recordsEnrolmentDiv">
+            <div class="scrollHeaderTextDiv">
+              <i class="ph ph-scroll" id="scrollIcon" aria-hidden="true"></i>
+              <div class="recordsInnerDiv">
+                <h4 id="recordEnrolmentHeaderText">Records & Enrolment</h4>
+                <p id="enrolmentPara">
+                  Manage your student records and complete your final
+                  enrolment steps.
+                </p>
+              </div>
+            </div>
+            <div class="recordsInnerDiv">
+              <i class="ph-duotone ph-arrow-circle-right" id="RecordEnrolmentArrow" aria-hidden="true"></i>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footerOuterDiv">
+      <div class="footerHeaderTextDiv">
+        <h4 id="footerHeader">IT eCampus</h4>
+        <p>Empowering the next generation of software engineers.</p>
+      </div>
+      <div class="footerLinksDiv">
+        <a href="#" class="footerLinksText">Privacy Policy</a>
+        <a href="#" class="footerLinksText">Technical Support</a>
+        <a href="#" class="footerLinksText">Student Portal</a>
+        <a href="#" class="footerLinksText">Contact</a>
+      </div>
+      <div class="footerCopyrightText">
+        <p>
+          © 2026 eCampus IT Programming Diploma. Architectural Editorial
+          System.
+        </p>
+        <p>
+          <a target="_blank" href="https://icons8.com/icon/7Eh5YqvCmikK/hand-cursor">Cursor</a>
+          icons by <a target="_blank" href="https://icons8.com">Icons8</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>
