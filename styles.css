@@ -9,6 +9,13 @@
   --text-muted-light: rgb(79, 79, 79);
   --text-muted-dark: rgb(200, 200, 200);
 
+  /* Cursor */
+  --cursor-blackoutline: url('Images/icons8-cursor.svg'), auto;
+  --cursor-pointer-blackoutline: url('Images/icons8-hand-cursor.svg'), pointer;
+
+  --cursor-whiteoutline: url('Images/icons8-cursor-recolored.svg'), auto;
+  --cursor-pointer-whiteoutline: url('Images/icons8-hand-cursor-recolored.svg'), pointer;
+
   /* Navigation */
   --menu-bar-div-light: rgb(62, 113, 159);
   --menu-bar-div-dark: #10477b;
@@ -67,6 +74,8 @@
   --bg-color: var(--bg-color-light);
   --text-main: var(--text-main-light);
   --text-muted: var(--text-muted-light);
+  --cursor-auto: var(--cursor-blackoutline);
+  --cursor-pointer: var(--cursor-pointer-blackoutline);
   --menu-bar-div: var(--menu-bar-div-light);
   --menu-options-text: var(--menu-options-text-light);
   --apply-btn-bg: var(--apply-btn-bg-light);
@@ -90,6 +99,8 @@
   --bg-color: var(--bg-color-dark);
   --text-main: var(--text-main-dark);
   --text-muted: var(--text-muted-dark);
+  --cursor-auto: var(--cursor-whiteoutline);
+  --cursor-pointer: var(--cursor-pointer-whiteoutline);
   --menu-bar-div: var(--menu-bar-div-dark);
   --menu-options-text: var(--menu-options-text-dark);
   --apply-btn-bg: var(--apply-btn-bg-dark);
@@ -120,7 +131,7 @@ body {
   background-color: var(--bg-color);
   color: var(--text-main);
   font-family: Arial, Helvetica, sans-serif;
-  cursor: url('Images/icons8-cursor.svg'), auto;
+  cursor: var(--cursor-auto);
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -163,7 +174,7 @@ section {
   background-color: var(--secondary-btn-bg);
   color: var(--secondary-btn-text);
   font-size: 90%;
-  cursor: url('Images/icons8-hand-cursor.svg'), pointer;
+  cursor: var(--cursor-pointer);
 }
 
 /* Menu Bar */
@@ -211,7 +222,7 @@ section {
 .menuOptionsText:hover {
   color: var(--accent-color);
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  cursor: url('Images/icons8-hand-cursor.svg'), pointer;
+  cursor: var(--cursor-pointer);
 }
 
 .applyBtn {
@@ -230,7 +241,7 @@ section {
   background-color: var(--bg-section);
   color: var(--apply-btn-bg);
   border: 1px solid var(--apply-btn-bg);
-  cursor: url('Images/icons8-hand-cursor.svg'), pointer;
+  cursor: var(--cursor-pointer);
 }
 
 /* Hero Section */
@@ -273,7 +284,7 @@ section {
 #curricBtn:hover {
   background-color: var(--accent-color);
   color: var(--bg-section);
-  cursor: url('Images/icons8-hand-cursor.svg'), pointer;
+  cursor: var(--cursor-pointer);
 }
 
 #heroImage,
@@ -512,7 +523,7 @@ i {
   border-radius: 10px;
   box-shadow: 2px 4px 4px var(--apply-btn-shadow);
   border: none;
-  cursor: url('Images/icons8-hand-cursor.svg'), pointer;
+  cursor: var(--cursor-pointer);
 }
 
 .roadmapCardDivs:active {
@@ -546,7 +557,7 @@ i {
   border-radius: 10px;
   box-shadow: 2px 4px 4px var(--apply-btn-shadow);
   border: none;
-  cursor: url('Images/icons8-hand-cursor.svg'), pointer;
+  cursor: var(--cursor-pointer);
 }
 
 #recordsEnrolmentDiv:active {
