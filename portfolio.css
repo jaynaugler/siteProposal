@@ -9,6 +9,14 @@
   --color-white: #fff;
 }
 
+/* Using the new colours not in styles to support dark mode */
+[data-theme="dark"] {
+  --primary-color: #8ab4f8;
+  --border-color: #444444; 
+  --color-surface-dark: rgba(45, 45, 45, 0.8); 
+  --color-white: rgb(30, 30, 30); 
+}
+
 h1,
 h2 {
   color: var(--primary-color);
@@ -122,8 +130,7 @@ a {
 .sample-item {
   border: 1px solid var(--border-color);
   border-radius: 16px;
-  background-color: rgba(255, 255, 255, 0.5);
-
+  background-color: var(--card-bg-muted);
   padding: 1rem 1.25rem;
   margin-bottom: 1rem;
 }
@@ -159,7 +166,7 @@ a {
 .timeline-item {
   border: 1px solid var(--border-color);
   border-radius: 16px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: var(--card-bg-muted);
   margin-bottom: 1rem;
 }
 
@@ -277,13 +284,13 @@ details[open] .timeline-chevron {
 
 .roadmap-header h2 {
   font-size: 1.75rem;
-  color: #1a1a1a;
+  color: var(--text-main);
   margin-bottom: 6px;
 }
 
 .roadmap-header p {
   font-size: 0.95rem;
-  color: #666;
+  color: var(--text-muted);
 }
 
 /* Steps Grid */
@@ -370,7 +377,7 @@ details[open] .timeline-chevron {
   flex-direction: column;
   justify-content: space-between;
   gap: 0.75rem;
-  background-color: #fdf9ed;
+  background-color: var(--bg-section);
   border: 1px solid var(--border-color);
   border-radius: 12px;
   padding: 1.25rem;

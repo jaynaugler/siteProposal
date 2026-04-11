@@ -164,6 +164,7 @@ section {
   width: 100%;
 }
 
+
 .container {
   width: 90%;
   margin: 0 auto;
@@ -626,6 +627,16 @@ footer {
   padding: 0.5rem;
 }
 
+  #reading-progress {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  height: 6px;
+  width: 0%;
+  background-color: #10477b;
+  transition: width 0.1s linear;
+}
+
 /* Media Queries */
 @media (max-width: 599px) {
   /* Hero Section */
@@ -694,5 +705,8 @@ footer {
   #footerHeader {
     font-size: 0.75rem;
   }
+
+
+
 
 }
