@@ -70,6 +70,16 @@
   --alert-text-light: rgb(162, 13, 13);
   --alert-text-dark: rgb(255, 154, 154);
 
+  /* Portfolio Page specific colours */
+  --primary-color: #10477b;
+  --border-color: #d7d7d7;
+  --color-surface-dark: rgba(233, 233, 233, 0.5);
+  --color-step-first: #f4c542;
+  --color-step-each: #4cd964;
+  --color-step-final: #e85d9a;
+  --color-step-review: #5ac8fa;
+  --color-white: #fff;
+
   /* Map the default theme (light mode) */
   --bg-color: var(--bg-color-light);
   --text-main: var(--text-main-light);
@@ -117,6 +127,12 @@
   --alert-bg: var(--alert-bg-dark);
   --alert-border: var(--alert-border-dark);
   --alert-text: var(--alert-text-dark);
+
+  /* Portfolio Colours */
+    --primary-color: #8ab4f8;
+  --border-color: #444444; 
+  --color-surface-dark: rgba(45, 45, 45, 0.8); 
+  --color-white: rgb(30, 30, 30); 
 }
 
 /* Start of CSS styling */
@@ -640,7 +656,7 @@ footer {
   left: 0;
   height: 6px;
   width: 0%;
-  background-color: #10477b;
+  background-color: var(--accent-color);
   transition: width 0.1s linear;
 }
 
