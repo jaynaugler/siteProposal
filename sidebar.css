@@ -167,3 +167,10 @@
 .sidebar-link--active .sidebar-status--done {
   color: var(--color-white);
 }
+
+@media (max-width: 768px) {
+  .sidebar-open {
+    margin-top: 3.5rem;
+    top: 4.5rem;
+  }
+}
