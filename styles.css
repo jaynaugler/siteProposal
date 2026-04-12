@@ -160,7 +160,7 @@
   box-sizing: border-box;
 }
 
-a {
+a, summary.timeline-header {
   cursor: var(--cursor-pointer);
 }
 
