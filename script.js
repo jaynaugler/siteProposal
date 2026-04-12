@@ -35,7 +35,7 @@ themeToggleBtn.addEventListener("change", () => {
 });
 
 // Confetti effect for clicking 'Apply Now' buttons!
-const applyButtons = document.querySelectorAll(".applyBtn");
+const applyButtons = document.querySelectorAll(".applyBtn, .btn-apply");
 
 applyButtons.forEach((button) => {
   button.addEventListener("click", (e) => {
