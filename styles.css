@@ -160,6 +160,10 @@
   box-sizing: border-box;
 }
 
+a {
+  cursor: var(--cursor-pointer);
+}
+
 body {
   background-color: var(--bg-color);
   color: var(--text-main);
