@@ -75,11 +75,12 @@
   --primary-color: #10477b;
   --border-color: #d7d7d7;
   --color-surface-dark: rgba(233, 233, 233, 0.5);
-  --color-step-first: #f4c542;
-  --color-step-each: #4cd964;
-  --color-step-final: #e85d9a;
-  --color-step-review: #5ac8fa;
+--color-step-first: #664d00; 
+  --color-step-each: #165c16; 
+  --color-step-final: #800040; 
+  --color-step-review: #004c7a; 
   --color-white: #fff;
+  --always-white: #fff;
 
   /* Map the default theme (light mode) */
   --bg-color: var(--bg-color-light);
@@ -146,8 +147,10 @@
   *,
   *::before,
   *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
@@ -165,7 +168,13 @@
   box-sizing: border-box;
 }
 
-a, summary.timeline-header {
+a, 
+summary.timeline-header, 
+.toggle-label, 
+.menu-toggle, 
+.btn-apply, 
+.applyBtn, 
+.btn-secondary {
   cursor: var(--cursor-pointer);
 }
 
@@ -208,6 +217,11 @@ section {
   width: 100%;
 }
 
+button:focus-visible, a:focus-visible, summary:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 4px;
+}
+
 .container {
   width: 90%;
   margin: 0 auto;
@@ -245,7 +259,7 @@ section {
 .nav-link {
   color: var(--menu-options-text);
   font-weight: 600;
-  cursor: pointer;
+  cursor: var(--cursor-pointer);
   position: relative;
 }
 
@@ -275,14 +289,14 @@ section {
   display: block;
   padding: 0.5rem;
   background-color: var(--apply-btn-bg);
-  color: var(--apply-btn-text);
+  color: var(--always-white);
   font-weight: bold;
   font-size: 1rem;
   border-radius: 10px;
   box-shadow: 2px 4px 4px var(--apply-btn-shadow);
   border: 1px solid transparent;
   transition: all 0.2s ease-in-out;
-  cursor: pointer;
+  cursor: var(--cursor-pointer);
   flex-shrink: 0;
 }
 
@@ -300,7 +314,7 @@ section {
   padding: 0.5rem;
   border-radius: 10px;
   font-weight: bold;
-  cursor: pointer;
+  cursor: var(--cursor-pointer);
 }
 
 .btn-theme-toggle {
@@ -311,7 +325,7 @@ section {
   background-color: transparent;
   border: unset;
   color: white;
-  cursor: pointer;
+  cursor: var(--cursor-pointer);
 }
 
 .menu-toggle i {
@@ -333,7 +347,6 @@ section {
   align-items: center;
   justify-content: space-between;
   transition: background-color 200ms ease;
-  cursor: pointer;
 }
 
 .toggle-label i {
@@ -461,10 +474,10 @@ section {
 .applyBtn {
   padding: 12px 16px;
   background-color: var(--apply-btn-bg);
-  color: var(--apply-btn-text);
+  color: var(--always-white);
   font-weight: bold;
   font-size: 1rem;
-  border-radius: 10px;
+  border-radius: 12px;
   box-shadow: 2px 4px 4px var(--apply-btn-shadow);
   border: 1px solid transparent;
   transition: all 0.2s ease-in-out;
@@ -558,6 +571,7 @@ section {
   font-size: 1rem;
   font-weight: 300;
   color: var(--accent-color);
+  margin-bottom: 1em;
 }
 
 #nextGenHeaderText {
@@ -850,6 +864,7 @@ footer {
   width: 0%;
   background-color: var(--accent-color);
   transition: width 0.1s linear;
+  z-index: 1000;
 }
 
 /* Media Queries */
@@ -861,7 +876,8 @@ footer {
     align-items: center;
     width: 100%;
     max-height: auto;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 
   /* Welcome to Section */
